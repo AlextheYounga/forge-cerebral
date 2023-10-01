@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Markets",
+        "current": false,
+        "children": [
+            {
+                "name": "Bitcoin Vol",
+                "href": "/blog/markets/bitcoin_vol"
+            }
+        ]
+    },
+    {
+        "name": "Philosophy",
+        "current": false,
+        "children": [
+            {
+                "name": "Impossibility Of Predicting The Future",
+                "href": "/blog/philosophy/impossibility-of-predicting-the-future"
+            }
+        ]
+    },
+    {
+        "name": "Science",
+        "current": false,
+        "children": [
+            {
+                "name": "Bioeconomics How Biology Solved Economics",
+                "href": "/blog/science/bioeconomics-how-biology-solved-economics"
+            },
+            {
+                "name": "Breaking The Cosmic Speed Limit",
+                "href": "/blog/science/breaking-the-cosmic-speed-limit"
+            },
+            {
+                "name": "The Universe As A Statistical Approximation",
+                "href": "/blog/science/the-universe-as-a-statistical-approximation"
+            }
+        ]
+    }
+]
