@@ -1,7 +1,9 @@
 <script setup>
+    import NavBar from '@/components/NavBar.vue';
 </script>
 
 <template>
+    <NavBar />
     <main class="max-w-7xl container mx-auto">
         <section class="body-font w-full">
             <div class="container px-5 py-24 mx-auto">
@@ -21,7 +23,7 @@
                         </a>
                     </div>
                 </div>
-                <button class="flex mx-auto mt-16 text-gray-800 bg-gold border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg">Read</button>
+                <a href="blog" class="w-32 justify-center flex mx-auto mt-16 text-gray-800 bg-gold border-0 py-2 focus:outline-none hover:bg-yellow-300 rounded text-lg">Read</a>
             </div>
         </section>
     </main>
