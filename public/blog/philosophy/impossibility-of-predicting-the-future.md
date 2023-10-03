@@ -1,6 +1,6 @@
 # The Impossibility of Predicting the Universe, in All Possible Universes
 
-![](https://substack-post-media.s3.amazonaws.com/public/images/b2562aa3-f419-461d-8790-1fe6d1becb01_640x640.jpeg)"
+![](https://substack-post-media.s3.amazonaws.com/public/images/b2562aa3-f419-461d-8790-1fe6d1becb01_640x640.jpeg)
 
 Determinism, when taken to its ultimate conclusion, is beset by a
 paradox for which I am unaware of a widely accepted term. For now, I
