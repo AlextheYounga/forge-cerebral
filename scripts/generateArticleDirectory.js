@@ -2,8 +2,14 @@
 const fs = require('fs')
 const _ = require('lodash')
 
-const blogFolder = 'src/articles'
+const blogFolder = 'public/blog'
 const blogTopics = fs.readdirSync(blogFolder)
+
+function getPostTitle(path) {
+    const postContent = fs.readFileSync(path, 'utf-8')
+    const postTitle = postContent.split('\n')[0].replace('# ', '')
+    return postTitle
+}
 
 const blogDirectory = []
 for (const topic of blogTopics) {
@@ -21,9 +27,12 @@ for (const topic of blogTopics) {
 
     for (const post of topicPosts) {
         if (['.DS_Store', 'README.md'].includes(post)) continue
+        const postFullpath = `${topicFolder}/${post}`
 
-        const postTitle = post.replace('.md', '')
-        const postPath = `${topic}/${postTitle}`
+        const postSlug = post.replace('.md', '')
+        const postTitle = getPostTitle(postFullpath)
+
+        const postPath = `${topic}/${postSlug}`
         topicDirectory.children.push({
             name: _.startCase(postTitle),
             href: `/blog/${postPath}`
