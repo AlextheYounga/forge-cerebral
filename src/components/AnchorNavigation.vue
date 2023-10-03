@@ -1,5 +1,5 @@
 <template>
-    <ul class="table-of-contents border-l border-stone-700 pl-2 flex grow flex-col gap-y-3 py-4">
+    <ul class="table-of-contents hidden lg:flex border-l border-stone-700 pl-2 grow flex-col gap-y-3 py-4">
         <li class="text-sm" v-for="header of headers">
             <a :href="`#${header.id}`">{{ header.text }}</a>
         </li>

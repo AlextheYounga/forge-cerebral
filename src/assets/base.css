@@ -90,6 +90,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.navbar, .sidebar {
+.navbar, .sidebar, .mobile-sidebar {
   background-color: var(--color-background);
 }
