@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Markets",
+        "current": false,
+        "children": [
+            {
+                "name": "The Bitcoin Volatility Problem And Possible Solutions",
+                "href": "/blog/markets/bitcoin_vol"
+            }
+        ]
+    },
+    {
+        "name": "Philosophy",
+        "current": false,
+        "children": [
+            {
+                "name": "The Impossibility Of Predicting The Universe In All Possible Universes",
+                "href": "/blog/philosophy/impossibility-of-predicting-the-future"
+            }
+        ]
+    },
+    {
+        "name": "Science",
+        "current": false,
+        "children": [
+            {
+                "name": "Bioeconomics How Biology Solved Economics Billions Of Years Ago",
+                "href": "/blog/science/bioeconomics-how-biology-solved-economics"
+            },
+            {
+                "name": "Breaking The Cosmic Speed Limit",
+                "href": "/blog/science/breaking-the-cosmic-speed-limit"
+            },
+            {
+                "name": "The Universe As A Statistical Approximation",
+                "href": "/blog/science/the-universe-as-a-statistical-approximation"
+            }
+        ]
+    }
+]

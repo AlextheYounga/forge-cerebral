@@ -12,6 +12,8 @@ function getPostTitle(path) {
 }
 
 const blogDirectory = []
+const blogList = []
+
 for (const topic of blogTopics) {
     if (['.DS_Store', 'README.md'].includes(topic)) continue
 
@@ -33,15 +35,18 @@ for (const topic of blogTopics) {
         const postTitle = getPostTitle(postFullpath)
 
         const postPath = `${topic}/${postSlug}`
-        topicDirectory.children.push({
+        const blogItem = {
             name: _.startCase(postTitle),
             href: `/blog/${postPath}`
-        })
+        }
+
+        topicDirectory.children.push(blogItem)
+        blogList.push(blogItem)
     }
 
     blogDirectory.push(topicDirectory)
 }
-
-fs.writeFileSync('src/data/articles.json', JSON.stringify(blogDirectory, null, 4))
+fs.writeFileSync('src/data/articles.json', JSON.stringify(blogList, null, 4))
+fs.writeFileSync('src/data/directory.json', JSON.stringify(blogDirectory, null, 4))
 console.log('Article directory generated!')
 
