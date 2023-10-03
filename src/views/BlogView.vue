@@ -5,14 +5,16 @@
                 <BlogNavigation />
             </div>
 
-            <div class="w-full mt-24">
-                <div>
-                    <div class="container max-w-2xl mx-auto">
-                        <div id="article-body">
-                            <vue-markdown :source="markdown" :options="options" />
-                        </div>
+            <div class="container w-2/3 mx-auto max-w-2xl">
+                <div class="mx-auto">
+                    <div id="article-body" class="mt-24 block">
+                        <div v-html="markdown"></div>
                     </div>
                 </div>
+            </div>
+
+            <div v-if="markdown" class="fixed right-5 top-[6rem] block w-1/6">
+                <AnchorNavigation />
             </div>
         </div>
     </main>
@@ -20,33 +22,41 @@
 
 <script>
 import BlogNavigation from '@/components/BlogNavigation.vue';
-import VueMarkdown from 'vue-markdown-render'
+import AnchorNavigation from '../components/AnchorNavigation.vue';
+import MarkdownIt from 'markdown-it'
+import MarkdownItAnchor from 'markdown-it-anchor'
 
 export default {
     name: 'BlogView',
     components: {
         BlogNavigation,
-        VueMarkdown
+        AnchorNavigation,
+        MarkdownIt,
+        MarkdownItAnchor
     },
     data() {
         return {
-            markdown: '',
+            markdown: null,
             options: {
                 html: true,
                 linkify: true,
-            }
+            },
+            plugins: [MarkdownItAnchor]
         }
     },
-    mounted() {
+    created() {
         this.fetchMarkdown();
     },
     methods: {
         async fetchMarkdown() {
             const path = this.$route.path;
             const markdownContent = await fetch(`${path}.md`);
-            this.markdown = await markdownContent.text();
+            const markdownText = await markdownContent.text();
+
+            this.markdown = new MarkdownIt(this.options ?? {})
+                .use(MarkdownItAnchor)
+                .render(markdownText);
         },
     }
-
 }
 </script>
