@@ -1,7 +1,7 @@
 <template>
     <!-- Navbar -->
     <header class="fixed top-0 w-full z-50 navbar body-font">
-        <div class="border-b border-slate-800 mx-auto flex flex-wrap py-4 flex-col md:flex-row items-center px-4">
+        <div class="border-b border-stone-700 mx-auto flex flex-wrap py-4 flex-col md:flex-row items-center px-4">
             <div class="flex relative w-full">
                 <!-- Mobile sidebar button -->
                 <div class="border-gray-200 flex items-center shadow-sm z-40 absolute left-0">
@@ -84,21 +84,21 @@
     </TransitionRoot>
 
     <!-- Static Sidebar for desktop -->
-    <div class="sidebar hidden lg:fixed lg:flex top-[4rem] w-1/5 h-full grow flex-col gap-y-5 overflow-y-auto border-r border-slate-800 px-6">
+    <div class="sidebar hidden lg:fixed lg:flex top-[3.8rem] w-1/5 h-full grow flex-col gap-y-5 overflow-y-auto border-r border-stone-700 px-6">
         <nav class="flex flex-1 flex-col">
             <ul role="list" class="flex flex-1 flex-col gap-y-7">
                 <li>
                     <ul role="list" class="-mx-2 space-y-1">
                         <li v-for="item in directory" :key="item.name">
-                            <a v-if="!item.children" :href="item.href" :class="[item.current ? 'bg-gold' : 'hover:bg-slate-800', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-300']">{{ item.name }}</a>
+                            <a v-if="!item.children" :href="item.href" :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-300']">{{ item.name }}</a>
                             <Disclosure as="div" defaultOpen v-else v-slot="{ open }">
-                                <DisclosureButton :class="[item.current ? 'bg-gold' : 'hover:bg-slate-800', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold text-gray-300']">
+                                <DisclosureButton :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold text-gray-300']">
                                     <ChevronRightIcon :class="[open ? 'rotate-90 text-gray-400' : 'text-gray-300', 'h-5 w-5 shrink-0']" aria-hidden="true" />
                                     {{ item.name }}
                                 </DisclosureButton>
                                 <DisclosurePanel as="ul" class="mt-1 px-2">
                         <li v-for="subItem in item.children" :key="subItem.name">
-                            <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'bg-gold' : 'hover:bg-slate-800', 'block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-gray-400']">{{ subItem.name }}</DisclosureButton>
+                            <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-gray-400']">{{ subItem.name }}</DisclosureButton>
                         </li>
                         </DisclosurePanel>
                         </Disclosure>

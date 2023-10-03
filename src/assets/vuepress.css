@@ -124,3 +124,12 @@
     border: 1px solid #dfe2e5;
     padding: 0.6em 1em;
 }
+
+h2:target,
+h3:target,
+h4:target,
+h5:target,
+h6:target {
+    scroll-margin-top: 4.2rem;
+    
+}
