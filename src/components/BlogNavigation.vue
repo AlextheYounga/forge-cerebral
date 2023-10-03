@@ -17,7 +17,6 @@
                     </a>
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -41,39 +40,42 @@
                             </div>
                         </TransitionChild>
                         <!-- Sidebar component, swap this element with another sidebar if you like -->
-                        <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-indigo-600 px-6 pb-4">
-                            <div class="flex h-16 shrink-0 items-center">
-                                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=white" alt="Your Company" />
-                            </div>
+                        <div class="mobile-sidebar flex grow flex-col gap-y-5 overflow-y-auto px-6 py-4">
                             <nav class="flex flex-1 flex-col">
                                 <ul role="list" class="flex flex-1 flex-col gap-y-7">
                                     <li>
                                         <ul role="list" class="-mx-2 space-y-1">
-                                            <li v-for="item in navigation" :key="item.name">
-                                                <a :href="item.href" :class="[item.current ? 'bg-indigo-700 text-white' : 'text-indigo-200 hover:text-white hover:bg-indigo-700', 'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold']">
-                                                    <component :is="item.icon" :class="[item.current ? 'text-white' : 'text-indigo-200 group-hover:text-white', 'h-6 w-6 shrink-0']" aria-hidden="true" />
+                                            <li v-for="item in directory" :key="item.name">
+                                                <a v-if="!item.children" :href="item.href" :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-300']">
                                                     {{ item.name }}
                                                 </a>
+                                                <Disclosure as="div" defaultOpen v-else v-slot="{ open }">
+                                                    <DisclosureButton :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold text-gray-300']">
+                                                        <ChevronRightIcon :class="[open ? 'rotate-90 text-gray-400' : 'text-gray-300', 'h-5 w-5 shrink-0']" aria-hidden="true" />
+                                                        {{ item.name }}
+                                                    </DisclosureButton>
+                                                    <DisclosurePanel as="ul" class="mt-1 px-2">
+                                            <li v-for="subItem in item.children" :key="subItem.name">
+                                                <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-gray-400']">
+                                                    {{ subItem.name }}
+                                                </DisclosureButton>
                                             </li>
-                                        </ul>
+                                            </DisclosurePanel>
+                                            </Disclosure>
                                     </li>
-                                    <li>
-                                        <div class="text-xs font-semibold leading-6 text-indigo-200">Your teams</div>
-                                        <ul role="list" class="-mx-2 mt-2 space-y-1">
-                                            <li v-for="team in teams" :key="team.name">
-                                                <a :href="team.href" :class="[team.current ? 'bg-indigo-700 text-white' : 'text-indigo-200 hover:text-white hover:bg-indigo-700', 'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold']">
-                                                    <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-indigo-400 bg-indigo-500 text-[0.625rem] font-medium text-white">{{ team.initial }}</span>
-                                                    <span class="truncate">{{ team.name }}</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="mt-auto">
-                                        <a href="#" class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-indigo-200 hover:bg-indigo-700 hover:text-white">
-                                            <Cog6ToothIcon class="h-6 w-6 shrink-0 text-indigo-200 group-hover:text-white" aria-hidden="true" />
-                                            Settings
-                                        </a>
-                                    </li>
+                                </ul>
+                                </li>
+                                <li class="mt-auto pb-8">
+                                    <div class="flex flex-wrap gap-4">
+                                        <p class="text-sm font-semibold text-gray-300">Bionic Reading</p>
+                                        <Switch v-model="bionicReadingEnabled"
+                                            :class="[bionicReadingEnabled ? 'bg-gold' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2']">
+                                            <span class="sr-only">Bionic Reading</span>
+                                            <span aria-hidden="true"
+                                                :class="[bionicReadingEnabled ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
+                                        </Switch>
+                                    </div>
+                                </li>
                                 </ul>
                             </nav>
                         </div>
@@ -84,13 +86,15 @@
     </TransitionRoot>
 
     <!-- Static Sidebar for desktop -->
-    <div class="sidebar hidden lg:fixed lg:flex top-[3.8rem] w-1/5 h-full grow flex-col gap-y-5 overflow-y-auto border-r border-stone-700 px-6">
+    <div class="sidebar hidden lg:fixed lg:flex top-[3.8rem] w-1/5 float-left grow flex-col gap-y-5 overflow-y-auto border-r border-stone-700 px-6">
         <nav class="flex flex-1 flex-col">
-            <ul role="list" class="flex flex-1 flex-col gap-y-7">
+            <ul role="list" class="flex flex-1 flex-col gap-y-7 overflow-scroll">
                 <li>
                     <ul role="list" class="-mx-2 space-y-1">
                         <li v-for="item in directory" :key="item.name">
-                            <a v-if="!item.children" :href="item.href" :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-300']">{{ item.name }}</a>
+                            <a v-if="!item.children" :href="item.href" :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-300']">
+                                {{ item.name }}
+                            </a>
                             <Disclosure as="div" defaultOpen v-else v-slot="{ open }">
                                 <DisclosureButton :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold text-gray-300']">
                                     <ChevronRightIcon :class="[open ? 'rotate-90 text-gray-400' : 'text-gray-300', 'h-5 w-5 shrink-0']" aria-hidden="true" />
@@ -98,41 +102,69 @@
                                 </DisclosureButton>
                                 <DisclosurePanel as="ul" class="mt-1 px-2">
                         <li v-for="subItem in item.children" :key="subItem.name">
-                            <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-gray-400']">{{ subItem.name }}</DisclosureButton>
+                            <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-gray-400']">
+                                {{ subItem.name }}
+                            </DisclosureButton>
                         </li>
                         </DisclosurePanel>
                         </Disclosure>
                 </li>
             </ul>
             </li>
+            <li class="mt-auto pb-8">
+                <div class="flex flex-wrap gap-4">
+                    <p class="text-sm font-semibold text-gray-300">Bionic Reading</p>
+                    <Switch v-model="bionicReading"
+                        :class="[bionicReading ? 'bg-gold' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2']">
+                        <span class="sr-only">Bionic Reading</span>
+                        <span aria-hidden="true" :class="[bionicReading ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
+                    </Switch>
+                </div>
+            </li>
             </ul>
         </nav>
     </div>
 </template>
   
-<script setup>
-import {
-    Dialog,
-    DialogPanel,
-    TransitionChild,
-    TransitionRoot,
-} from '@headlessui/vue'
-import {
-    Cog6ToothIcon,
-    XMarkIcon,
-    Bars3Icon,
-} from '@heroicons/vue/24/outline'
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
-import { ChevronRightIcon, ChevronDownIcon } from '@heroicons/vue/20/solid'
-import articleDirectory from '../data/articles.json'
+<script>
+import { Dialog, DialogPanel, TransitionChild, TransitionRoot } from '@headlessui/vue'
+import { XMarkIcon, Bars3Icon } from '@heroicons/vue/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel, Switch } from '@headlessui/vue'
+import { ChevronRightIcon } from '@heroicons/vue/20/solid'
+import articleDirectory from '../data/directory.json'
 import { ref } from 'vue';
 
-const directory = articleDirectory
-const sidebarOpen = ref(false)
+export default {
+    components: {
+        Dialog,
+        DialogPanel,
+        TransitionChild,
+        TransitionRoot,
+        XMarkIcon,
+        Bars3Icon,
+        Disclosure,
+        DisclosureButton,
+        DisclosurePanel,
+        Switch,
+        ChevronRightIcon
+    },
+    data() {
+        return {
+            bionicReading: this.$store.state.bionicReading,
+            directory: articleDirectory,
+            sidebarOpen: ref(false)
+        }
+    },
+    watch: {
+        bionicReading() {
+            this.$store.commit('toggleBionicReading');
+        }
+    }
+}
 </script>
 
 <style scoped>
-#sidebar {
-    height: 100%;
+.sidebar {
+    height: calc(100vh - 3.8rem);
 }
 </style>

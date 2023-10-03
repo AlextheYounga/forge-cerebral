@@ -1,19 +1,20 @@
 <template>
     <main>
-        <div class="content ">
-            <div class="h-full z-50">
+        <div class="content">
+            <div class="z-50">
                 <BlogNavigation />
             </div>
 
-            <div class="container w-2/3 mx-auto max-w-2xl">
+
+            <div class="h-full container w-2/3 mx-auto max-w-xl xl:max-w-2xl">
                 <div class="mx-auto">
                     <div id="article-body" class="mt-24 block">
-                        <div v-html="markdown"></div>
+                        <div v-html="markdownHtml"></div>
                     </div>
                 </div>
             </div>
 
-            <div v-if="markdown" class="fixed right-5 top-[6rem] block w-1/6">
+            <div v-if="markdownHtml" class="fixed right-5 top-[6rem] block w-1/6">
                 <AnchorNavigation />
             </div>
         </div>
@@ -22,9 +23,10 @@
 
 <script>
 import BlogNavigation from '@/components/BlogNavigation.vue';
-import AnchorNavigation from '../components/AnchorNavigation.vue';
+import AnchorNavigation from '@/components/AnchorNavigation.vue';
 import MarkdownIt from 'markdown-it'
 import MarkdownItAnchor from 'markdown-it-anchor'
+import bionicifyMarkdown from "bionic-markdown";
 
 export default {
     name: 'BlogView',
@@ -36,7 +38,9 @@ export default {
     },
     data() {
         return {
-            markdown: null,
+            markdownHtml: null,
+            markdownContent: null,
+            bionicMarkdown: null,
             options: {
                 html: true,
                 linkify: true,
@@ -45,18 +49,55 @@ export default {
         }
     },
     created() {
-        this.fetchMarkdown();
+        this.setupMarkdown();
     },
     methods: {
-        async fetchMarkdown() {
+        async setupMarkdown() {
             const path = this.$route.path;
-            const markdownContent = await fetch(`${path}.md`);
-            const markdownText = await markdownContent.text();
+            const markdownFileContent = await fetch(`${path}.md`);
+            const markdownContent = await markdownFileContent.text();
 
-            this.markdown = new MarkdownIt(this.options ?? {})
-                .use(MarkdownItAnchor)
-                .render(markdownText);
+            this.markdownContent = markdownContent;
+
+            return this.processMarkdownContent()
         },
-    }
+
+        markdownToBionic() {
+            return bionicifyMarkdown(this.markdownContent, {useAsterick: true});
+        },
+
+        markdownToHtml(markdownContent) {
+            return new MarkdownIt(this.options ?? {})
+                .use(MarkdownItAnchor)
+                .render(markdownContent);
+        },
+
+        async processMarkdownContent() {
+            if (!this.markdownContent) return
+
+            if (this.bionicReading) {
+                if (!this.bionicMarkdown) {
+                    this.bionicMarkdown = this.markdownToBionic();
+                }
+                
+                this.markdownHtml = this.markdownToHtml(this.bionicMarkdown);
+                return
+            }
+
+            this.markdownHtml = this.markdownToHtml(this.markdownContent);
+        }
+    },
+    computed: {
+        bionicReading() {
+            return this.$store.state.bionicReading
+        }
+    },
+    watch: {
+        bionicReading(newVal, oldVal) {
+            if (newVal !== oldVal) {
+                this.processMarkdownContent();
+            }
+        }
+    },
 }
 </script>
