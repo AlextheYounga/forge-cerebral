@@ -2,6 +2,44 @@
 @import './fonts.css';
 @import './base.css';
 
+/* Accents */
+body h1 {
+    color: var(--color-heading)
+}
+
+button,
+.button {
+    background-color: var(--color-accent);
+    color: var(--vt-c-white-mute);
+}
+
+.navbar,
+.sidebar,
+.mobile-sidebar {
+    background-color: var(--color-background);
+}
+
+.active,
+.accent,
+a,
+.sidebar button {
+    color: var(--color-accent);
+}
+
+.sidebar a,
+.table-of-contents a {
+    color: var(--color-text-accent);
+}
+
+.sidebar a:hover {
+    background-color: var(--color-text-accent-hover);
+}
+
+.toggles button.active {
+    background-color: var(--color-accent);
+}
+
+
 
 /* Speed Reading */
 body.bionic #article-body p,
@@ -36,7 +74,7 @@ h6:target {
 
 #article-body h1 {
     /* TODO: Fix title colors */
-    color: #F2D024;
+    /* color: #F2D024; */
     font-size: 2.2rem;
 }
 
@@ -157,7 +195,7 @@ h6:target {
 /* Article Links */
 #article-body a {
     font-weight: 600;
-    color: #F2D024;
+    /* color: #F2D024; */
 }
 
 #article-body a[href^="http"]::after,

@@ -5,16 +5,18 @@
             <div class="flex relative w-full">
                 <!-- Mobile sidebar button -->
                 <div class="border-gray-200 flex items-center shadow-sm z-40 absolute left-0">
-                    <button type="button" class="text-gray-100 lg:hidden" @click="sidebarOpen = true">
+                    <button type="button" class="lg:hidden" @click="sidebarOpen = true">
                         <span class="sr-only">Open sidebar</span>
                         <Bars3Icon class="h-6 w-6" aria-hidden="true" />
                     </button>
                 </div>
                 <!-- Header Title -->
                 <div class="mx-auto lg:mx-0">
-                    <a href="/" class="flex title-font font-medium items-center text-gold md:mb-0">
-                        <span class="ml-3 text-xl">Forge Cerebral</span>
-                    </a>
+                    <h1>
+                        <a href="/" class="flex title-font font-medium items-center md:mb-0">
+                            <span class="ml-3 text-xl">Forge Cerebral</span>
+                        </a>
+                    </h1>
                 </div>
             </div>
         </div>
@@ -46,17 +48,17 @@
                                     <li>
                                         <ul role="list" class="space-y-1">
                                             <li v-for="item in directory" :key="item.name">
-                                                <a v-if="!item.children" :href="item.href" :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-300']">
+                                                <a v-if="!item.children" :href="item.href" :class="[item.current ? 'active' : '', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold']">
                                                     {{ item.name }}
                                                 </a>
                                                 <Disclosure as="div" defaultOpen v-else v-slot="{ open }">
-                                                    <DisclosureButton :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold text-gray-300']">
-                                                        <ChevronRightIcon :class="[open ? 'rotate-90 text-gray-400' : 'text-gray-300', 'h-5 w-5 shrink-0']" aria-hidden="true" />
+                                                    <DisclosureButton :class="[item.current ? 'active' : '', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold']">
+                                                        <ChevronRightIcon :class="[open ? 'rotate-90 active' : '', 'h-5 w-5 shrink-0']" aria-hidden="true" />
                                                         {{ item.name }}
                                                     </DisclosureButton>
                                                     <DisclosurePanel as="ul" class="mt-1 px-2">
                                             <li v-for="subItem in item.children" :key="subItem.name">
-                                                <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-gray-400']">
+                                                <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'active' : '', 'block rounded-md py-2 pr-2 pl-9 text-sm leading-6']">
                                                     {{ subItem.name }}
                                                 </DisclosureButton>
                                             </li>
@@ -65,14 +67,23 @@
                                     </li>
                                 </ul>
                                 </li>
-                                <li class="mt-auto pb-8">
-                                    <div class="flex flex-wrap gap-4">
-                                        <p class="text-sm font-semibold text-gray-300">Speed Reading</p>
-                                        <Switch v-model="bionicReadingEnabled"
-                                            :class="[bionicReadingEnabled ? 'bg-gold' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2']">
+                                <li class="toggles mt-auto pb-8">
+                                    <div class="flex flex-wrap w-3/4 justify-between pb-3">
+                                        <p class="text-sm font-semibold">Speed Reading</p>
+                                        <Switch v-model="bionicReading"
+                                            :class="[bionicReading ? 'active' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out']">
                                             <span class="sr-only">Speed Reading</span>
                                             <span aria-hidden="true"
-                                                :class="[bionicReadingEnabled ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
+                                                :class="[bionicReading ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
+                                        </Switch>
+                                    </div>
+
+                                    <div class="flex flex-wrap w-3/4 justify-between">
+                                        <p class="text-sm font-semibold">Dark Mode</p>
+                                        <Switch v-model="darkMode"
+                                            :class="[darkMode ? 'bg-gold' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none']">
+                                            <span class="sr-only">Dark Mode</span>
+                                            <span aria-hidden="true" :class="[darkMode ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
                                         </Switch>
                                     </div>
                                 </li>
@@ -92,17 +103,17 @@
                 <li>
                     <ul role="list" class="space-y-1">
                         <li v-for="item in directory" :key="item.name">
-                            <a v-if="!item.children" :href="item.href" :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-300']">
+                            <a v-if="!item.children" :href="item.href" :class="[item.current ? 'active' : '', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold']">
                                 {{ item.name }}
                             </a>
                             <Disclosure as="div" defaultOpen v-else v-slot="{ open }">
-                                <DisclosureButton :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold text-gray-300']">
-                                    <ChevronRightIcon :class="[open ? 'rotate-90 text-gray-400' : 'text-gray-300', 'h-5 w-5 shrink-0']" aria-hidden="true" />
+                                <DisclosureButton :class="[item.current ? 'active' : '', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold']">
+                                    <ChevronRightIcon :class="[open ? 'active rotate-90' : '', 'h-5 w-5 shrink-0']" aria-hidden="true" />
                                     {{ item.name }}
                                 </DisclosureButton>
                                 <DisclosurePanel as="ul" class="mt-1 px-2">
                         <li v-for="subItem in item.children" :key="subItem.name">
-                            <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-9 text-sm leading-6 text-gray-400']">
+                            <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'active' : '', 'block rounded-md py-2 pr-2 pl-9 text-sm leading-6']">
                                 {{ subItem.name }}
                             </DisclosureButton>
                         </li>
@@ -111,20 +122,20 @@
                 </li>
             </ul>
             </li>
-            <li class="mt-auto pb-8">
+            <li class="toggles mt-auto pb-8">
                 <div class="flex flex-wrap w-3/4 justify-between pb-3">
-                    <p class="text-sm font-semibold text-gray-300">Speed Reading</p>
+                    <p class="text-sm font-semibold">Speed Reading</p>
                     <Switch v-model="bionicReading"
-                        :class="[bionicReading ? 'bg-gold' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2']">
+                        :class="[bionicReading ? 'active' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none']">
                         <span class="sr-only">Speed Reading</span>
                         <span aria-hidden="true" :class="[bionicReading ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
                     </Switch>
                 </div>
 
                 <div class="flex flex-wrap w-3/4 justify-between">
-                    <p class="text-sm font-semibold text-gray-300">Dark Mode</p>
+                    <p class="text-sm font-semibold">Dark Mode</p>
                     <Switch v-model="darkMode"
-                        :class="[darkMode ? 'bg-gold' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2']">
+                        :class="[darkMode ? 'bg-gold' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none']">
                         <span class="sr-only">Dark Mode</span>
                         <span aria-hidden="true" :class="[darkMode ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
                     </Switch>
