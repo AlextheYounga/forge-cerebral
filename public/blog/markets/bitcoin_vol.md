@@ -4,33 +4,15 @@
 ![BTC
 Log Returns](https://cdn-images-1.medium.com/max/800/1*3QqxT3GOwT86ju43IOaW-g.jpeg)
 
-Bitcoin is easily one of the most significant economic experiments in
-history. It represents hope for a world led by fiscally reckless
-politicians. But there are several logical hurdles that Bitcoin will
-have to jump through in order to become anything close to a practical
-money. Its volatility and endless uncertainty currently make it
-unsuitable as good money.
+Bitcoin is easily one of the most significant economic experiments in history. It represents hope for a world led by fiscally reckless politicians. But there are several logical hurdles that Bitcoin will have to jump through in order to become anything close to a practical money. Its volatility and endless uncertainty currently make it unsuitable as good money.
 
-Can it overcome those hurdles with time? Let's take a look at some
-graphs and see just how far Bitcoin will have to go. I have included the
-data in this article from my Excel workbook, it is linked at the end of
-this article.
+Can it overcome those hurdles with time? Let's take a look at some graphs and see just how far Bitcoin will have to go. I have included the data in this article from my Excel workbook, it is linked at the end of this article.
 
 ## The Volatility Problem
 
-If Bitcoin can ever be a practical money, its value **has** to
-stabilize. Long-term contracts depend on a money's stability to satisfy
-all parties involved.
+If Bitcoin can ever be a practical money, its value **has** to stabilize. Long-term contracts depend on a money's stability to satisfy all parties involved.
 
-To put this in perspective: let's say that last year, you took out a
-loan in Bitcoin when its price was just below \$8000. Today, your debt
-would have increased by over 7 times, as of this writing in February
-2021. You went from a debt valued at \$8000 to now owing the value of
-\$58,000. That's how this works. That is one of the main reasons why
-governments love devaluing their currencies. Inflation, or
-*depreciation,* of currency makes paying back debt significantly easier.
-Deflation, or *appreciation,* makes paying back debt significantly
-harder.
+To put this in perspective: let's say that last year, you took out a loan in Bitcoin when its price was just below \$8000. Today, your debt would have increased by over 7 times, as of this writing in February 2021. You went from a debt valued at \$8000 to now owing the value of \$58,000. That's how this works. That is one of the main reasons why governments love devaluing their currencies. Inflation, or *depreciation,* of currency makes paying back debt significantly easier. Deflation, or *appreciation,* makes paying back debt significantly harder.
 
 As a rule, money that *appreciates* with time is more practical than a
 money that *depreciates*, but both inflation and deflation can undermine
