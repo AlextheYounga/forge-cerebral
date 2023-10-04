@@ -12,9 +12,9 @@
   "dependencies": {
     "@headlessui/vue": "^1.7.16",
     "@heroicons/vue": "^2.0.18",
-    "bionic-markdown": "https://github.com/AlextheYounga/bionic-markdown.git",
     "markdown-it": "^13.0.2",
     "markdown-it-anchor": "^8.6.7",
+    "text-vide": "^1.7.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5",
     "vuex": "^4.1.0"

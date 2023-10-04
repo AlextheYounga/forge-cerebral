@@ -5,21 +5,7 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import { createStore } from 'vuex'
-
-// Create a new store instance.
-const store = createStore({
-    state() {
-        return {
-            bionicReading: false
-        }
-    },
-    mutations: {
-        toggleBionicReading(state) {
-            state.bionicReading = !state.bionicReading
-        }
-    }
-})
+import store from './store'
 
 const app = createApp(App)
 

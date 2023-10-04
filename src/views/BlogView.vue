@@ -9,7 +9,7 @@
             <div class="h-full container w-2/3 mx-auto max-w-xl xl:max-w-2xl">
                 <div class="mx-auto">
                     <div id="article-body" class="mt-24 block">
-                        <div v-html="markdownHtml"></div>
+                        <div v-html="renderHtml"></div>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@ import BlogNavigation from '@/components/BlogNavigation.vue';
 import AnchorNavigation from '@/components/AnchorNavigation.vue';
 import MarkdownIt from 'markdown-it'
 import MarkdownItAnchor from 'markdown-it-anchor'
-import bionicifyMarkdown from "bionic-markdown";
+import { textVide } from "text-vide";
 
 export default {
     name: 'BlogView',
@@ -39,8 +39,7 @@ export default {
     data() {
         return {
             markdownHtml: null,
-            markdownContent: null,
-            bionicMarkdown: null,
+            bionicHtml: null,
             options: {
                 html: true,
                 linkify: true,
@@ -57,13 +56,8 @@ export default {
             const markdownFileContent = await fetch(`${path}.md`);
             const markdownContent = await markdownFileContent.text();
 
-            this.markdownContent = markdownContent;
-
-            return this.processMarkdownContent()
-        },
-
-        markdownToBionic() {
-            return bionicifyMarkdown(this.markdownContent, {useAsterick: true});
+            this.markdownHtml = this.markdownToHtml(markdownContent);
+            return this.processHtml()
         },
 
         markdownToHtml(markdownContent) {
@@ -72,30 +66,33 @@ export default {
                 .render(markdownContent);
         },
 
-        async processMarkdownContent() {
-            if (!this.markdownContent) return
+        htmlToBionic() {
+            return textVide(this.markdownHtml);
+        },
+
+        async processHtml() {
+            if (!this.markdownHtml) return
 
             if (this.bionicReading) {
-                if (!this.bionicMarkdown) {
-                    this.bionicMarkdown = this.markdownToBionic();
+                if (!this.bionicHtml) {
+                    this.bionicHtml = this.htmlToBionic();
                 }
-                
-                this.markdownHtml = this.markdownToHtml(this.bionicMarkdown);
                 return
             }
-
-            this.markdownHtml = this.markdownToHtml(this.markdownContent);
         }
     },
     computed: {
         bionicReading() {
             return this.$store.state.bionicReading
+        },
+        renderHtml() {
+            return this.bionicReading ? this.bionicHtml : this.markdownHtml
         }
     },
     watch: {
         bionicReading(newVal, oldVal) {
             if (newVal !== oldVal) {
-                this.processMarkdownContent();
+                this.processHtml();
             }
         }
     },
