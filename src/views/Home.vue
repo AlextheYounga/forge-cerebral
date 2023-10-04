@@ -9,8 +9,8 @@
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-col text-center w-full mb-20">
                     <h2 class="text-xs text-gold tracking-widest font-medium title-font mb-1">Alex Younger's</h2>
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-100">The Tenth Man</h1>
-                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400">When nine men arrive at the same conclusion, it is the duty of the tenth man to disagree, and strive to disprove the others, despite his own intuition.</p>
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-100">Forge Cerebral</h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400">When nine men arrive at the same conclusion, it is the duty of Forge Cerebral to disagree, and strive to disprove the others, despite his own intuition.</p>
                 </div>
                 <div class="flex flex-wrap">
                     <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800 border-opacity-60">

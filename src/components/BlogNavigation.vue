@@ -13,7 +13,7 @@
                 <!-- Header Title -->
                 <div class="mx-auto lg:mx-0">
                     <a href="/" class="flex title-font font-medium items-center text-gold md:mb-0">
-                        <span class="ml-3 text-xl">The Tenth Man</span>
+                        <span class="ml-3 text-xl">Forge Cerebral</span>
                     </a>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                             <nav class="flex flex-1 flex-col">
                                 <ul role="list" class="flex flex-1 flex-col gap-y-7">
                                     <li>
-                                        <ul role="list" class="-mx-2 space-y-1">
+                                        <ul role="list" class="space-y-1">
                                             <li v-for="item in directory" :key="item.name">
                                                 <a v-if="!item.children" :href="item.href" :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-300']">
                                                     {{ item.name }}
@@ -67,10 +67,10 @@
                                 </li>
                                 <li class="mt-auto pb-8">
                                     <div class="flex flex-wrap gap-4">
-                                        <p class="text-sm font-semibold text-gray-300">Bionic Reading</p>
+                                        <p class="text-sm font-semibold text-gray-300">Speed Reading</p>
                                         <Switch v-model="bionicReadingEnabled"
                                             :class="[bionicReadingEnabled ? 'bg-gold' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2']">
-                                            <span class="sr-only">Bionic Reading</span>
+                                            <span class="sr-only">Speed Reading</span>
                                             <span aria-hidden="true"
                                                 :class="[bionicReadingEnabled ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
                                         </Switch>
@@ -90,7 +90,7 @@
         <nav class="flex flex-1 flex-col">
             <ul role="list" class="flex flex-1 flex-col gap-y-7 overflow-scroll">
                 <li>
-                    <ul role="list" class="-mx-2 space-y-1">
+                    <ul role="list" class="space-y-1">
                         <li v-for="item in directory" :key="item.name">
                             <a v-if="!item.children" :href="item.href" :class="[item.current ? 'bg-gold' : 'hover:bg-stone-800', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold text-gray-300']">
                                 {{ item.name }}
@@ -112,12 +112,21 @@
             </ul>
             </li>
             <li class="mt-auto pb-8">
-                <div class="flex flex-wrap gap-4">
-                    <p class="text-sm font-semibold text-gray-300">Bionic Reading</p>
+                <div class="flex flex-wrap w-3/4 justify-between pb-3">
+                    <p class="text-sm font-semibold text-gray-300">Speed Reading</p>
                     <Switch v-model="bionicReading"
                         :class="[bionicReading ? 'bg-gold' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2']">
-                        <span class="sr-only">Bionic Reading</span>
+                        <span class="sr-only">Speed Reading</span>
                         <span aria-hidden="true" :class="[bionicReading ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
+                    </Switch>
+                </div>
+
+                <div class="flex flex-wrap w-3/4 justify-between">
+                    <p class="text-sm font-semibold text-gray-300">Dark Mode</p>
+                    <Switch v-model="darkMode"
+                        :class="[darkMode ? 'bg-gold' : 'bg-gray-200', 'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2']">
+                        <span class="sr-only">Dark Mode</span>
+                        <span aria-hidden="true" :class="[darkMode ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
                     </Switch>
                 </div>
             </li>
@@ -151,6 +160,7 @@ export default {
     data() {
         return {
             bionicReading: this.$store.state.bionicReading,
+            darkMode: this.$store.state.darkMode,
             directory: articleDirectory,
             sidebarOpen: ref(false)
         }
@@ -158,6 +168,9 @@ export default {
     watch: {
         bionicReading() {
             this.$store.commit('toggleBionicReading');
+        },
+        darkMode() {
+            this.$store.commit('toggleDarkMode');
         }
     }
 }
