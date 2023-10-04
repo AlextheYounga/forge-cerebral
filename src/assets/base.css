@@ -1,20 +1,3 @@
-@font-face {
-  font-family: 'Titillium Web';
-  src: url('@/assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf') format('truetype'),
-    url('@/assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf') format('truetype'),
-    url('@/assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf') format('truetype'),
-    url('@/assets/fonts/Titillium_Web/TitilliumWeb-BoldItalic.ttf') format('truetype'),
-    url('@/assets/fonts/Titillium_Web/TitilliumWeb-ExtraLight.ttf') format('truetype'),
-    url('@/assets/fonts/Titillium_Web/TitilliumWeb-ExtraLightItalic.ttf') format('truetype'),
-    url('@/assets/fonts/Titillium_Web/TitilliumWeb-Italic.ttf') format('truetype'),
-    url('@/assets/fonts/Titillium_Web/TitilliumWeb-Light.ttf') format('truetype'),
-    url('@/assets/fonts/Titillium_Web/TitilliumWeb-LightItalic.ttf') format('truetype'),
-    url('@/assets/fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf') format('truetype'),
-    url('@/assets/fonts/Titillium_Web/TitilliumWeb-SemiBoldItalic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --vt-c-white: #ffffff;
@@ -53,6 +36,20 @@
   --section-gap: 160px;
 }
 
+body.light {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--vt-c-black);
@@ -73,6 +70,18 @@
   box-sizing: border-box;
   margin: 0;
   font-weight: normal;
+}
+
+body.dark {
+  --color-background: var(--vt-c-black);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
+
+  --color-border: var(--vt-c-divider-dark-2);
+  --color-border-hover: var(--vt-c-divider-dark-1);
+
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-text: var(--vt-c-text-dark-2);
 }
 
 body {
