@@ -15,7 +15,11 @@
                                         <span v-if=article.date class="mt-1 text-sm">{{ article.date }}</span>
                                     </div>
                                     <div class="md:flex-grow">
-                                        <h2 class="text-2xl font-medium title title-font mb-2">{{ article.name }}</h2>
+                                        <a :href="article.href">
+                                            <h2 class="text-2xl font-medium title-font mb-2">
+                                                {{ article.name }}
+                                            </h2>
+                                        </a>
                                         <p class="leading-relaxed">{{ article.description }}</p>
                                         <a :href="article.href" class="inline-flex items-center mt-4">Read
                                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">

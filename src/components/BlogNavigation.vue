@@ -4,7 +4,7 @@
         <div class="border-b border-stone-700 mx-auto flex flex-wrap py-4 flex-col md:flex-row items-center px-4">
             <div class="flex relative w-full">
                 <!-- Mobile sidebar button -->
-                <div class="border-gray-200 flex items-center shadow-sm z-40 absolute left-0">
+                <div class="hamburger border-gray-200 flex items-center shadow-sm z-40 absolute left-0">
                     <button type="button" class="lg:hidden" @click="sidebarOpen = true">
                         <span class="sr-only">Open sidebar</span>
                         <Bars3Icon class="h-6 w-6" aria-hidden="true" />
@@ -106,7 +106,7 @@
                             <a v-if="!item.children" :href="item.href" :class="[item.current ? 'active' : '', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold']">
                                 {{ item.name }}
                             </a>
-                            <Disclosure as="div" v-else v-slot="{ open }">
+                            <Disclosure as="div" v-else defaultOpen v-slot="{ open }">
                                 <DisclosureButton :class="[item.current ? 'active' : '', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold']">
                                     <ChevronRightIcon :class="[open ? 'active rotate-90' : '', 'h-5 w-5 shrink-0']" aria-hidden="true" />
                                     {{ item.name }}

@@ -2,11 +2,15 @@
 @import './base.css';
 
 /* Accents */
-body h1, .title {
+body h1, .title-font {
     color: var(--color-heading)
 }
 
-button,
+.hamburger button {
+    color: var(--color-accent) !important;
+}
+
+
 .button {
     background-color: var(--color-accent);
     color: var(--color-text-opposite);
