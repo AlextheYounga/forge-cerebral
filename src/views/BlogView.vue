@@ -8,7 +8,7 @@
 
             <div class="h-full container w-2/3 mx-auto max-w-xl xl:max-w-2xl">
                 <div class="mx-auto">
-                    <div id="article-body" class="mt-24 block">
+                    <div v-if="renderHtml" id="article-body" class="mt-24 block">
                         <div v-html="renderHtml"></div>
                     </div>
                 </div>
@@ -26,6 +26,7 @@ import BlogNavigation from '@/components/BlogNavigation.vue';
 import AnchorNavigation from '@/components/AnchorNavigation.vue';
 import MarkdownIt from 'markdown-it'
 import MarkdownItAnchor from 'markdown-it-anchor'
+import articles from '@/data/articles.json'
 import { textVide } from "text-vide";
 
 export default {
@@ -53,7 +54,7 @@ export default {
     methods: {
         async setupMarkdown() {
             const path = this.$route.path;
-            const markdownFileContent = await fetch(`${path}.md`);
+            const markdownFileContent = await fetch(`/src${path}.md`);
             const markdownContent = await markdownFileContent.text();
 
             this.markdownHtml = this.markdownToHtml(markdownContent);

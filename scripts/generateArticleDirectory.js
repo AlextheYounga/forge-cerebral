@@ -4,7 +4,7 @@ const _ = require('lodash')
 const articles = require('../src/data/articles.json')
 const jsdom = require("jsdom");
 
-const blogFolder = 'public/blog'
+const blogFolder = 'src/blog'
 const blogTopics = fs.readdirSync(blogFolder)
 
 const blogDirectory = []

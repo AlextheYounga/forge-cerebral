@@ -10,6 +10,11 @@ const router = createRouter({
       component: Home
     },
     {
+      path: '/blog/',
+      name: 'index',
+      component: () => import('../views/BlogIndex.vue')
+    },
+    {
       path: '/blog/:pathMatch(.*)*',
       name: 'blog',
       component: () => import('../views/BlogView.vue')
