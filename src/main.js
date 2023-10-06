@@ -1,4 +1,4 @@
-import './assets/main.css'
+import './assets/styles/main.css'
 // import { ViteSSG } from 'vite-ssg'
 //https://github.com/antfu/vite-ssg
 

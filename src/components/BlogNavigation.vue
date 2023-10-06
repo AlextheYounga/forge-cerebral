@@ -51,7 +51,7 @@
                                                 <a v-if="!item.children" :href="item.href" :class="[item.current ? 'active' : '', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold']">
                                                     {{ item.name }}
                                                 </a>
-                                                <Disclosure as="div" defaultOpen v-else v-slot="{ open }">
+                                                <Disclosure as="div" v-else v-slot="{ open }">
                                                     <DisclosureButton :class="[item.current ? 'active' : '', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold']">
                                                         <ChevronRightIcon :class="[open ? 'rotate-90 active' : '', 'h-5 w-5 shrink-0']" aria-hidden="true" />
                                                         {{ item.name }}
@@ -67,7 +67,8 @@
                                     </li>
                                 </ul>
                                 </li>
-                                <li class="toggles mt-auto pb-8">
+                                </ul>
+                                <div class="toggles mt-auto pb-8">
                                     <div class="flex flex-wrap w-3/4 justify-between pb-3">
                                         <p class="text-sm font-semibold">Speed Reading</p>
                                         <Switch v-model="bionicReading"
@@ -86,8 +87,7 @@
                                             <span aria-hidden="true" :class="[darkMode ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
                                         </Switch>
                                     </div>
-                                </li>
-                                </ul>
+                                </div>
                             </nav>
                         </div>
                     </DialogPanel>
@@ -99,21 +99,21 @@
     <!-- Static Sidebar for desktop -->
     <div class="sidebar hidden lg:fixed lg:flex top-[3.8rem] w-1/5 float-left grow flex-col gap-y-5 overflow-y-auto border-r border-stone-700 px-6">
         <nav class="flex flex-1 flex-col">
-            <ul role="list" class="flex flex-1 flex-col gap-y-7 overflow-scroll">
+            <ul role="list" class="flex gap-y-7 h-[75vh] overflow-scroll">
                 <li>
                     <ul role="list" class="space-y-1">
                         <li v-for="item in directory" :key="item.name">
                             <a v-if="!item.children" :href="item.href" :class="[item.current ? 'active' : '', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold']">
                                 {{ item.name }}
                             </a>
-                            <Disclosure as="div" defaultOpen v-else v-slot="{ open }">
+                            <Disclosure as="div" v-else v-slot="{ open }">
                                 <DisclosureButton :class="[item.current ? 'active' : '', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold']">
                                     <ChevronRightIcon :class="[open ? 'active rotate-90' : '', 'h-5 w-5 shrink-0']" aria-hidden="true" />
                                     {{ item.name }}
                                 </DisclosureButton>
                                 <DisclosurePanel as="ul" class="mt-1 px-2">
                         <li v-for="subItem in item.children" :key="subItem.name">
-                            <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'active' : '', 'block rounded-md py-2 pr-2 pl-9 text-sm leading-6']">
+                            <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'active' : '', 'block rounded-md py-2 pl-5 text-sm leading-6']">
                                 {{ subItem.name }}
                             </DisclosureButton>
                         </li>
@@ -122,7 +122,8 @@
                 </li>
             </ul>
             </li>
-            <li class="toggles mt-auto pb-8">
+            </ul>
+            <div class="toggles mt-auto pb-8">
                 <div class="flex flex-wrap w-3/4 justify-between pb-3">
                     <p class="text-sm font-semibold">Speed Reading</p>
                     <Switch v-model="bionicReading"
@@ -140,8 +141,7 @@
                         <span aria-hidden="true" :class="[darkMode ? 'translate-x-5' : 'translate-x-0', 'pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out']" />
                     </Switch>
                 </div>
-            </li>
-            </ul>
+            </div>
         </nav>
     </div>
 </template>
