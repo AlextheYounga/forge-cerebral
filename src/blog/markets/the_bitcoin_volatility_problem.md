@@ -6,6 +6,12 @@
 <meta name="author" content="Alex Younger, alex@alextheyounger.me">
 <meta name="original-source" content="Exported from Medium.com on August 11, 2021.">
 <meta name="category" content="markets">
+
+<meta name="og:title" content="The Bitcoin Volatility Problem, and Possible Solutions"/>
+<meta name="og:type" content="blog"/>
+<meta name="og:image" content="https://cdn-images-1.medium.com/max/800/1*3QqxT3GOwT86ju43IOaW-g.jpeg"/>
+<meta name="og:site_name" content="Forge Cerebral"/>
+<meta name="og:description" content="Is it really the number of users, and the resulting arbitrage that makes an asset stable? I used to think so, but I now believe it may be more complicated than that. There are currencies with far fewer users, and lesser total valuation than Bitcoin, but they maintain a far more stable price."/>
 </head>
 
 # The Bitcoin Volatility Problem, and Possible Solutions 

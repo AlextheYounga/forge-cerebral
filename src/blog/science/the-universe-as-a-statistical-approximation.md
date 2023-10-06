@@ -1,6 +1,16 @@
 <head>
 <title>The Universe as a Statistical Approximation</title>
 <meta name="description" content="Most people tend to think of the brain as a single supercomputer, a single, rigid machine. But as Descartes pointed out hundreds of years ago, if this is the case, how is the brain capable of flexible reasoning?">
+<meta name="date" content="December 17, 2021">
+<meta name="author" content="Alex Younger, alex@alextheyounger.me">
+<meta name="original-source" content="Exported from Substack.com on September 13, 2023.">
+<meta name="category" content="science">
+
+<meta name="og:title" content="The Universe as a Statistical Approximation"/>
+<meta name="og:type" content="blog"/>
+<meta name="og:image" content="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6d93f790-9a76-4417-9942-8428eb5715c8_885x720.jpeg"/>
+<meta name="og:site_name" content="Forge Cerebral"/>
+<meta name="og:description" content="Most people tend to think of the brain as a single supercomputer, a single, rigid machine. But as Descartes pointed out hundreds of years ago, if this is the case, how is the brain capable of flexible reasoning?"/>
 </head>
 
 

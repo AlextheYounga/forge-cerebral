@@ -1,6 +1,16 @@
 <head>
 <title>Bioeconomics: How Biology Solved Economics Billions of Years Ago</title>
 <meta name="description" content="Though not immediately evident, the disciplines of biology and economics are essentially the same. Both are concerned with investigating how living organisms arrange themselves to produce, consume, and allocate resources in a world of scarcity.">
+<meta name="date" content="February 19, 2023">
+<meta name="author" content="Alex Younger, alex@alextheyounger.me">
+<meta name="original-source" content="Exported from Substack.com on September 13, 2023.">
+<meta name="category" content="science">
+
+<meta name="og:title" content="Bioeconomics: How Biology Solved Economics Billions of Years Ago"/>
+<meta name="og:type" content="blog"/>
+<meta name="og:image" content="https://substack-post-media.s3.amazonaws.com/public/images/23002237-966f-452f-8b43-fa51a4163ff0_1920x1200.jpeg"/>
+<meta name="og:site_name" content="Forge Cerebral"/>
+<meta name="og:description" content="Though not immediately evident, the disciplines of biology and economics are essentially the same. Both are concerned with investigating how living organisms arrange themselves to produce, consume, and allocate resources in a world of scarcity."/>
 </head>
 
 # Bioeconomics: How Biology Solved Economics Billions of Years Ago
