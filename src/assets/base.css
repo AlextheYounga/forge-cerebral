@@ -51,6 +51,8 @@
   --color-text: var(--vt-c-text-light-1);
   --color-text-accent: var(--vt-c-black-deaf-mute);
   --color-text-accent-hover: var(--vt-c-black-deaf-mute-hover);
+  --color-text-opposite: var(--vt-c-white-mute)
+  
 
   --section-gap: 160px;
 }
@@ -68,6 +70,7 @@ body.light {
   --color-text: var(--vt-c-text-light-1);
   --color-text-accent: var(--vt-c-black-deaf-mute);
   --color-text-accent-hover: var(--vt-c-black-deaf-mute-hover);
+  --color-text-opposite: var(--vt-c-white-mute)
 
   --section-gap: 160px;
 }
@@ -87,6 +90,7 @@ body.light {
     --color-text: var(--vt-c-text-dark-2);
     --color-text-accent: var(--vt-c-white-deaf-mute);
     --color-text-accent-hover: var(--vt-c-white-deaf-mute-hover);
+    --color-text-opposite: var(--vt-c-black-mute)
   }
 }
 
@@ -103,6 +107,7 @@ body.dark {
   --color-text: var(--vt-c-text-dark-2);
   --color-text-accent: var(--vt-c-white-deaf-mute);
   --color-text-accent-hover: var(--vt-c-white-deaf-mute-hover);
+  --color-text-opposite: var(--vt-c-black-mute)
 }
 
 body {

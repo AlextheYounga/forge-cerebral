@@ -3,14 +3,14 @@
 @import './base.css';
 
 /* Accents */
-body h1 {
+body h1, .title {
     color: var(--color-heading)
 }
 
 button,
 .button {
     background-color: var(--color-accent);
-    color: var(--vt-c-white-mute);
+    color: var(--color-text-opposite);
 }
 
 .navbar,
