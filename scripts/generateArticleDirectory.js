@@ -41,6 +41,7 @@ for (const topic of blogTopics) {
         const postSubtitle = head.querySelector('meta[name="subtitle"]')?.getAttribute('content')
         const description = head.querySelector('meta[name="description"]')?.getAttribute('content')
         const postDate = head.querySelector('meta[name="date"]')?.getAttribute('content')
+        const postImg = head.querySelector('meta[name="og:image"]')?.getAttribute('content')
 
         let blogItem = {
             name: _.startCase(postTitle),
@@ -49,6 +50,7 @@ for (const topic of blogTopics) {
             subtitle: postSubtitle ?? '',
             description: description ?? '',
             date: postDate ?? '',
+            img: postImg ?? '',
         }
 
         // Add to list

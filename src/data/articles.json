@@ -4,34 +4,44 @@
         "category": "Markets",
         "href": "/blog/markets/the_bitcoin_volatility_problem",
         "subtitle": "Can the BTC Vol Problem Be Overcome?",
-        "description": "Is it really the number of users, and the resulting arbitrage that makes an asset stable? I used to think so, but I now believe it may be more complicated than that. There are currencies with far fewer users, and lesser total valuation than Bitcoin, but they maintain a far more stable price."
+        "description": "Is it really the number of users, and the resulting arbitrage that makes an asset stable? I used to think so, but I now believe it may be more complicated than that. There are currencies with far fewer users, and lesser total valuation than Bitcoin, but they maintain a far more stable price.",
+        "date": "February 28, 2021",
+        "img": "https://cdn-images-1.medium.com/max/800/1*3QqxT3GOwT86ju43IOaW-g.jpeg"
     },
     {
         "name": "The Impossibility Of Predicting The Universe In All Possible Universes",
         "category": "Philosophy",
         "href": "/blog/philosophy/impossibility-of-predicting-the-future",
         "subtitle": "",
-        "description": "Determinism, when taken to its ultimate conclusion, is beset by a paradox for which I am unaware of a widely accepted term. For now, I won't try to make a creative name for it, I will simply refer to it as what it is: a deterministic infinite recursion loop."
+        "description": "Determinism, when taken to its ultimate conclusion, is beset by a paradox for which I am unaware of a widely accepted term. For now, I won't try to make a creative name for it, I will simply refer to it as what it is: a deterministic infinite recursion loop.",
+        "date": "February 5, 2023",
+        "img": "https://substack-post-media.s3.amazonaws.com/public/images/b2562aa3-f419-461d-8790-1fe6d1becb01_640x640.jpeg"
     },
     {
         "name": "Bioeconomics How Biology Solved Economics Billions Of Years Ago",
         "category": "Science",
         "href": "/blog/science/bioeconomics-how-biology-solved-economics",
         "subtitle": "",
-        "description": "Though not immediately evident, the disciplines of biology and economics are essentially the same. Both are concerned with investigating how living organisms arrange themselves to produce, consume, and allocate resources in a world of scarcity."
+        "description": "Though not immediately evident, the disciplines of biology and economics are essentially the same. Both are concerned with investigating how living organisms arrange themselves to produce, consume, and allocate resources in a world of scarcity.",
+        "date": "February 19, 2023",
+        "img": "https://substack-post-media.s3.amazonaws.com/public/images/23002237-966f-452f-8b43-fa51a4163ff0_1920x1200.jpeg"
     },
     {
         "name": "Breaking The Cosmic Speed Limit",
         "category": "Science",
         "href": "/blog/science/breaking-the-cosmic-speed-limit",
         "subtitle": "A New Hope for FTL",
-        "description": "300,000 kilometers per second. The constant velocity of light. This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it."
+        "description": "300,000 kilometers per second. The constant velocity of light. This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it.",
+        "date": "",
+        "img": ""
     },
     {
         "name": "The Universe As A Statistical Approximation",
         "category": "Science",
         "href": "/blog/science/the-universe-as-a-statistical-approximation",
         "subtitle": "",
-        "description": "Most people tend to think of the brain as a single supercomputer, a single, rigid machine. But as Descartes pointed out hundreds of years ago, if this is the case, how is the brain capable of flexible reasoning?"
+        "description": "Most people tend to think of the brain as a single supercomputer, a single, rigid machine. But as Descartes pointed out hundreds of years ago, if this is the case, how is the brain capable of flexible reasoning?",
+        "date": "December 17, 2021",
+        "img": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6d93f790-9a76-4417-9942-8428eb5715c8_885x720.jpeg"
     }
 ]
