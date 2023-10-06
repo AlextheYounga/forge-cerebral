@@ -1,3 +1,14 @@
+<head>
+
+
+<title>The Impossibility of Predicting the Universe, in All Possible Universes</title>
+<meta name="description" content="Determinism, when taken to its ultimate conclusion, is beset by a paradox for which I am unaware of a widely accepted term. For now, I won't try to make a creative name for it, I will simply refer to it as what it is: a deterministic infinite recursion loop.">
+<meta name="date" content="February 28, 2021">
+<meta name="author" content="Alex Younger, alex@alextheyounger.me">
+<meta name="original-source" content="Exported from Medium.com on August 11, 2021.">
+<meta name="category" content="markets">
+</head>
+
 # The Impossibility of Predicting the Universe, in All Possible Universes
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/b2562aa3-f419-461d-8790-1fe6d1becb01_640x640.jpeg)

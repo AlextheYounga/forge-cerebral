@@ -1,3 +1,8 @@
+<head>
+<title>Bioeconomics: How Biology Solved Economics Billions of Years Ago</title>
+<meta name="description" content="Though not immediately evident, the disciplines of biology and economics are essentially the same. Both are concerned with investigating how living organisms arrange themselves to produce, consume, and allocate resources in a world of scarcity.">
+</head>
+
 # Bioeconomics: How Biology Solved Economics Billions of Years Ago
 
 ![[TheDigitalArtist](https://pixabay.com/users/thedigitalartist-202249/)](https://substack-post-media.s3.amazonaws.com/public/images/23002237-966f-452f-8b43-fa51a4163ff0_1920x1200.jpeg)

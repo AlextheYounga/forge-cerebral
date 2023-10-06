@@ -1,3 +1,9 @@
+<head>
+<title>Breaking the Cosmic Speed Limit</title>
+<meta name="subtitle" content="A New Hope for FTL">
+<meta name="description" content="300,000 kilometers per second. The constant velocity of light. This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it.">
+</head>
+
 # Breaking the Cosmic Speed Limit
 **A New Hope for FTL**
 

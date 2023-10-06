@@ -1,3 +1,9 @@
+<head>
+<title>The Universe as a Statistical Approximation</title>
+<meta name="description" content="Most people tend to think of the brain as a single supercomputer, a single, rigid machine. But as Descartes pointed out hundreds of years ago, if this is the case, how is the brain capable of flexible reasoning?">
+</head>
+
+
 # The Universe as a Statistical Approximation
 
 ![fractal civilization](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6d93f790-9a76-4417-9942-8428eb5715c8_885x720.jpeg)
