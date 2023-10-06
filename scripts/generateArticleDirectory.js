@@ -1,25 +1,23 @@
 // node scripts/generateArticleDirectory.js
 const fs = require('fs')
 const _ = require('lodash')
+const articles = require('../src/data/articles.json')
+const jsdom = require("jsdom");
 
 const blogFolder = 'public/blog'
 const blogTopics = fs.readdirSync(blogFolder)
 
-function getPostTitle(path) {
-    const postContent = fs.readFileSync(path, 'utf-8')
-    const postTitle = postContent.split('\n')[0].replace('# ', '')
-    return postTitle
-}
-
 const blogDirectory = []
 const blogList = []
 
+// Loop through categories
 for (const topic of blogTopics) {
     if (['.DS_Store', 'README.md'].includes(topic)) continue
 
-    const displayTitle = _.startCase(topic)
+
+    const topicDisplayTitle = _.startCase(topic)
     const topicDirectory = {
-        name: displayTitle, // Name of the collapsible group
+        name: topicDisplayTitle, // Name of the collapsible group
         current: false,
         children: []
     }
@@ -27,21 +25,37 @@ for (const topic of blogTopics) {
     const topicFolder = `${blogFolder}/${topic}`
     const topicPosts = fs.readdirSync(topicFolder)
 
+    // Loop through individual posts
     for (const post of topicPosts) {
         if (['.DS_Store', 'README.md'].includes(post)) continue
         const postFullpath = `${topicFolder}/${post}`
 
         const postSlug = post.replace('.md', '')
-        const postTitle = getPostTitle(postFullpath)
-
+        const postContent = fs.readFileSync(postFullpath, 'utf-8')
         const postPath = `${topic}/${postSlug}`
-        const blogItem = {
+
+        // Parse head meta content
+        const doc = new jsdom.JSDOM(postContent).window;
+        const head = doc.document.getElementsByTagName('head')[0]
+        const postTitle = head.getElementsByTagName('title')[0].textContent
+        const postSubtitle = head.querySelector('meta[name="subtitle"]')?.getAttribute('content')
+        const description = head.querySelector('meta[name="description"]')?.getAttribute('content')
+        const postDate = head.querySelector('meta[name="date"]')?.getAttribute('content')
+
+        let blogItem = {
             name: _.startCase(postTitle),
-            href: `/blog/${postPath}`
+            category: topicDisplayTitle,
+            href: `/blog/${postPath}`,
+            subtitle: postSubtitle ?? '',
+            description: description ?? '',
+            date: postDate ?? '',
         }
 
-        topicDirectory.children.push(blogItem)
+        // Add to list
         blogList.push(blogItem)
+
+        // Add to directory
+        topicDirectory.children.push(blogItem)
     }
 
     blogDirectory.push(topicDirectory)
