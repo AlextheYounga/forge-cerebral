@@ -11,7 +11,8 @@
                     </button>
                 </div>
                 <!-- Header Title -->
-                <div class="mx-auto lg:mx-0">
+                <div class="flex items-center mx-auto lg:mx-0">
+                    <img src="../assets/images/logo.jpeg" alt="Forge Cerebral" class="w-10 h-10">
                     <h1>
                         <a href="/" class="flex title-font font-medium items-center md:mb-0">
                             <span class="ml-3 text-xl">Forge Cerebral</span>
@@ -97,7 +98,7 @@
     </TransitionRoot>
 
     <!-- Static Sidebar for desktop -->
-    <div class="sidebar hidden lg:fixed lg:flex top-[3.8rem] w-1/5 float-left grow flex-col gap-y-5 overflow-y-auto border-r border-stone-700 px-6">
+    <div class="sidebar hidden lg:fixed lg:flex top-[4.4rem] w-1/5 float-left grow flex-col gap-y-5 overflow-y-auto border-r border-stone-700 px-6">
         <nav class="flex flex-1 flex-col">
             <ul role="list" class="flex gap-y-7 h-[75vh] overflow-scroll">
                 <li>
@@ -166,7 +167,7 @@ export default {
         DisclosureButton,
         DisclosurePanel,
         Switch,
-        ChevronRightIcon
+        ChevronRightIcon,
     },
     data() {
         return {
@@ -189,6 +190,6 @@ export default {
 
 <style scoped>
 .sidebar {
-    height: calc(100vh - 3.8rem);
+    height: calc(100vh - 4.4rem);
 }
 </style>
