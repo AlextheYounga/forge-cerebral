@@ -57,9 +57,9 @@
                                                         {{ item.name }}
                                                     </DisclosureButton>
                                                     <DisclosurePanel as="ul" class="mt-1 px-2">
-                                            <li v-for="subItem in item.children" :key="subItem.name">
+                                            <li v-for="subItem in item.children" :key="subItem.title">
                                                 <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'active' : '', 'block rounded-md py-2 pr-2 pl-9 text-sm leading-6']">
-                                                    {{ subItem.name }}
+                                                    {{ subItem.title }}
                                                 </DisclosureButton>
                                             </li>
                                             </DisclosurePanel>
@@ -112,9 +112,9 @@
                                     {{ item.name }}
                                 </DisclosureButton>
                                 <DisclosurePanel as="ul" class="mt-1 px-2">
-                        <li v-for="subItem in item.children" :key="subItem.name">
+                        <li v-for="subItem in item.children" :key="subItem.title">
                             <DisclosureButton as="a" :href="subItem.href" :class="[subItem.current ? 'active' : '', 'block rounded-md py-2 pl-5 text-sm leading-6']">
-                                {{ subItem.name }}
+                                {{ subItem.title }}
                             </DisclosureButton>
                         </li>
                         </DisclosurePanel>

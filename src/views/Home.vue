@@ -22,7 +22,7 @@
                 </div>
                 <div class="flex flex-wrap">
                     <div v-for="article in randomArticles" :key="article.title" class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-800 border-opacity-60">
-                        <h2 class="text-lg sm:text-xl font-medium title-font mb-2"><a :href="article.href">{{ article.name }}</a></h2>
+                        <h2 class="text-lg sm:text-xl font-medium title-font mb-2"><a :href="article.href">{{ article.title }}</a></h2>
                         <p class="leading-relaxed text-base mb-4">{{ article.description || article.subtitle }}</p>
                         <a :href="article.href" class="inline-flex items-center">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">

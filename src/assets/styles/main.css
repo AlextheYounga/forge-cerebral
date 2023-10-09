@@ -2,7 +2,8 @@
 @import './base.css';
 
 /* Accents */
-body h1, .title-font {
+body h1,
+.title-font {
     color: var(--color-heading)
 }
 
@@ -24,13 +25,23 @@ body h1, .title-font {
 
 .active,
 .accent,
-a,
 .sidebar button {
     color: var(--color-accent);
 }
 
-.sidebar a,
-.table-of-contents a {
+#article-body a {
+    color: var(--color-accent);
+}
+
+.toc>a {
+    color: var(--color-text-accent);
+}
+
+.active-anchor {
+    color: var(--color-accent);
+}
+
+.sidebar a {
     color: var(--color-text-accent);
 }
 
@@ -45,23 +56,17 @@ a,
 
 
 /* Speed Reading */
-body.bionic #article-body p,
-body.bionic #article-body p>b {
-    font-family: 'Titillium Web';
-}
-
 body.bionic #article-body p>b {
     font-weight: 700;
-    font-size: 20px;
 }
 
-#article-body h1>b,
-#article-body h2>b,
-#article-body h3>b {
+body.bionic #article-body h1,
+body.bionic #article-body h2,
+body.bionic #article-body h3 {
     font-weight: bold !important;
 }
 
-#article-body a>b {
+#article-body a {
     font-weight: bold !important;
 }
 
@@ -76,8 +81,6 @@ h6:target {
 }
 
 #article-body h1 {
-    /* TODO: Fix title colors */
-    /* color: #F2D024; */
     font-size: 2.2rem;
 }
 
@@ -198,16 +201,17 @@ h6:target {
 /* Article Links */
 #article-body a {
     font-weight: 600;
-    /* color: #F2D024; */
 }
 
 #article-body a[href^="http"]::after,
 #article-body a[href^="https://"]::after {
     content: "";
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
     margin-left: 3px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' fill='gold' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+    fill: var(--color-accent);
+    /* color: var(--color-accent); */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
     background-position: bottom;
     background-size: contain;
     display: inline-flex;

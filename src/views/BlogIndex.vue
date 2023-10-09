@@ -11,13 +11,13 @@
                             <div v-for="article in articles" :key="article.href" class="-my-8 divide-y-2 divide-gray-100">
                                 <div class="py-8">
                                     <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                        <span class="font-semibold title-font">{{ article.category }}</span>
+                                        <span class="font-semibold title-font">{{ startCase(article.category) }}</span>
                                         <span v-if=article.date class="mt-1 text-sm">{{ article.date }}</span>
                                     </div>
                                     <div class="md:flex-grow">
                                         <a :href="article.href">
                                             <h2 class="text-2xl font-medium title-font mb-2">
-                                                {{ article.name }}
+                                                {{ article.title }}
                                             </h2>
                                         </a>
                                         <p class="leading-relaxed">{{ article.description }}</p>
@@ -41,4 +41,5 @@
 <script setup>
 import BlogNavigation from '@/components/BlogNavigation.vue';
 import articles from '@/data/articles.json'
+import startCase from 'lodash/startCase'
 </script>

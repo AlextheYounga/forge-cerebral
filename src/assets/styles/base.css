@@ -51,7 +51,7 @@
   --color-text: var(--vt-c-text-light-1);
   --color-text-accent: var(--vt-c-black-deaf-mute);
   --color-text-accent-hover: var(--vt-c-black-deaf-mute-hover);
-  --color-text-opposite: var(--vt-c-white-mute)
+  --color-text-opposite: var(--vt-c-white);
   
 
   --section-gap: 160px;
@@ -70,7 +70,7 @@ body.light {
   --color-text: var(--vt-c-text-light-1);
   --color-text-accent: var(--vt-c-black-deaf-mute);
   --color-text-accent-hover: var(--vt-c-black-deaf-mute-hover);
-  --color-text-opposite: var(--vt-c-white-mute)
+  --color-text-opposite: var(--vt-c-white);
 
   --section-gap: 160px;
 }
