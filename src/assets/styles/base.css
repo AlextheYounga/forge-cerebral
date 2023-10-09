@@ -37,6 +37,10 @@
   --vt-c-gold: #F2D024;
 }
 
+:root {
+	--icon-external-link: url('data:image/svg+xml, \<svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="gray" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"> \<path d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"/>\<polygon fill="gray" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9" />\</svg>');
+}
+
 /* Light Mode */
 :root {
   --color-background: var(--vt-c-white);
@@ -51,7 +55,7 @@
   --color-text: var(--vt-c-text-light-1);
   --color-text-accent: var(--vt-c-black-deaf-mute);
   --color-text-accent-hover: var(--vt-c-black-deaf-mute-hover);
-  --color-text-opposite: var(--vt-c-white);
+  --color-text-contrast: var(--vt-c-white);
   
 
   --section-gap: 160px;
@@ -70,7 +74,7 @@ body.light {
   --color-text: var(--vt-c-text-light-1);
   --color-text-accent: var(--vt-c-black-deaf-mute);
   --color-text-accent-hover: var(--vt-c-black-deaf-mute-hover);
-  --color-text-opposite: var(--vt-c-white);
+  --color-text-contrast: var(--vt-c-white);
 
   --section-gap: 160px;
 }
@@ -90,7 +94,7 @@ body.light {
     --color-text: var(--vt-c-text-dark-2);
     --color-text-accent: var(--vt-c-white-deaf-mute);
     --color-text-accent-hover: var(--vt-c-white-deaf-mute-hover);
-    --color-text-opposite: var(--vt-c-black-mute)
+    --color-text-contrast: var(--vt-c-black-mute)
   }
 }
 
@@ -107,7 +111,7 @@ body.dark {
   --color-text: var(--vt-c-text-dark-2);
   --color-text-accent: var(--vt-c-white-deaf-mute);
   --color-text-accent-hover: var(--vt-c-white-deaf-mute-hover);
-  --color-text-opposite: var(--vt-c-black-mute)
+  --color-text-contrast: var(--vt-c-black-mute)
 }
 
 body {
