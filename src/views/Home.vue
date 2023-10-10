@@ -1,6 +1,6 @@
 <script setup>
     import NavBar from '@/components/NavBar.vue';
-    import articles from '@/data/articles.json'
+    import articles from '@/meta/articles.json'
     import { shuffle, range, take } from 'lodash'
     import heroImg from '@/assets/images/story_of_man.jpeg'
 

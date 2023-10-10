@@ -2,7 +2,7 @@
     <!-- Navbar -->
     <header class="fixed top-0 w-full z-50 navbar body-font">
         <div class="border-b border-stone-700 mx-auto flex flex-wrap py-4 flex-col md:flex-row items-center px-4">
-            <div class="flex relative w-full">
+            <div class="flex relative w-full items-center">
                 <!-- Mobile sidebar button -->
                 <div class="hamburger border-gray-200 flex items-center shadow-sm z-40 absolute left-0">
                     <button type="button" class="lg:hidden" @click="sidebarOpen = true">
@@ -152,7 +152,7 @@ import { Dialog, DialogPanel, TransitionChild, TransitionRoot } from '@headlessu
 import { XMarkIcon, Bars3Icon } from '@heroicons/vue/24/outline'
 import { Disclosure, DisclosureButton, DisclosurePanel, Switch } from '@headlessui/vue'
 import { ChevronRightIcon } from '@heroicons/vue/20/solid'
-import articleDirectory from '../data/directory.json'
+import articleDirectory from '../meta/directory.json'
 import { ref } from 'vue';
 
 export default {

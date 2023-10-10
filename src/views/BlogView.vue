@@ -17,7 +17,7 @@
 import BlogNavigation from '@/components/BlogNavigation.vue';
 import ArticleContent from '@/components/ArticleContent.vue';
 import { useHead } from 'unhead';
-import metadata from '@/data/metadata.json'
+import metadata from '@/meta/metadata.json'
 
 export default {
     name: 'BlogView',
@@ -33,7 +33,6 @@ export default {
     },
     created() {
         const route = this.$route.path
-
         const articleMeta = metadata[route]
 
         useHead(articleMeta)

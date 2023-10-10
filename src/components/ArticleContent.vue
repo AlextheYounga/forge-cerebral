@@ -17,6 +17,7 @@ import AnchorNavigation from '@/components/AnchorNavigation.vue';
 import MarkdownIt from 'markdown-it'
 import MarkdownItAnchor from 'markdown-it-anchor'
 import { textVide } from "text-vide";
+import matter from 'gray-matter';
 
 export default {
     name: 'ArticleContent',
@@ -48,7 +49,9 @@ export default {
     methods: {
         async setupMarkdown() {
             const markdownFileContent = await fetch(this.markdownFilePath);
-            const markdownContent = await markdownFileContent.text();
+            const markdownText = await markdownFileContent.text();
+            const markdownMatter = matter(markdownText);
+            const markdownContent = markdownMatter.content;
 
             this.markdownHtml = this.markdownToHtml(markdownContent);
             return this.processHtml()

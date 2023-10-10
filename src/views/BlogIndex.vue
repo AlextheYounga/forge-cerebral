@@ -40,6 +40,6 @@
 
 <script setup>
 import BlogNavigation from '@/components/BlogNavigation.vue';
-import articles from '@/data/articles.json'
+import articles from '@/meta/articles.json'
 import startCase from 'lodash/startCase'
 </script>

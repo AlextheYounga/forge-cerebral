@@ -28,7 +28,8 @@ body h1,
 
 .active,
 .accent,
-.sidebar button {
+.sidebar button,
+.mobile-sidebar button {
     color: var(--color-accent);
 }
 
@@ -44,7 +45,7 @@ body h1,
     color: var(--color-accent);
 }
 
-.sidebar a {
+.sidebar a, .mobile-sidebar a {
     color: var(--color-text-accent);
 }
 
