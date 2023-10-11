@@ -1,5 +1,5 @@
 <template>
-    <div class="h-full container w-2/3 mx-auto max-w-xl xl:max-w-2xl">
+    <div class="h-full container px-6 sm:px-0 w-full sm:w-2/3 mx-auto max-w-xl xl:max-w-2xl">
         <div class="mx-auto">
             <div v-if="renderHtml" id="article-body" class="mt-24 block">
                 <div v-html="renderHtml"></div>
@@ -7,7 +7,7 @@
         </div>
     </div>
 
-    <div v-if="markdownHtml" class="fixed right-5 top-[6rem] block w-1/6">
+    <div v-if="markdownHtml">
         <AnchorNavigation :markdownHtml="markdownHtml" />
     </div>
 </template>

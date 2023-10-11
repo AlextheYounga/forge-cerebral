@@ -7,7 +7,7 @@
                 <div class="hamburger border-gray-200 flex items-center shadow-sm z-40 absolute left-0">
                     <button type="button" class="lg:hidden" @click="sidebarOpen = true">
                         <span class="sr-only">Open sidebar</span>
-                        <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+                        <ListBulletIcon class="h-6 w-6" aria-hidden="true" />
                     </button>
                 </div>
                 <!-- Header Title -->
@@ -149,7 +149,7 @@
   
 <script>
 import { Dialog, DialogPanel, TransitionChild, TransitionRoot } from '@headlessui/vue'
-import { XMarkIcon, Bars3Icon } from '@heroicons/vue/24/outline'
+import { XMarkIcon, ListBulletIcon } from '@heroicons/vue/24/outline'
 import { Disclosure, DisclosureButton, DisclosurePanel, Switch } from '@headlessui/vue'
 import { ChevronRightIcon } from '@heroicons/vue/20/solid'
 import articleDirectory from '../meta/directory.json'
@@ -162,7 +162,7 @@ export default {
         TransitionChild,
         TransitionRoot,
         XMarkIcon,
-        Bars3Icon,
+        ListBulletIcon,
         Disclosure,
         DisclosureButton,
         DisclosurePanel,

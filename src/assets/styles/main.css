@@ -7,7 +7,7 @@ body h1,
     color: var(--color-heading)
 }
 
-.hamburger button {
+.hamburger button, .toc-button button{
     color: var(--color-accent) !important;
 }
 
@@ -45,7 +45,8 @@ body h1,
     color: var(--color-accent);
 }
 
-.sidebar a, .mobile-sidebar a {
+.sidebar a,
+.mobile-sidebar a {
     color: var(--color-text-accent);
 }
 
@@ -139,6 +140,29 @@ h6:target {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+#article-body ul {
+    list-style-type: disc
+}
+
+#article-body ul li::marker {
+    color: var(--color-accent);
+}
+
+#article-body ol {
+    list-style-type: upper-roman;
+}
+
+#article-body ol li::marker {
+    color: var(--color-accent);
+}
+
+
+#article-body p.image-caption {
+    margin-top: -3em;
+    line-height: 1.5em;
+    font-size: 13px;
 }
 
 #article-body hr {
