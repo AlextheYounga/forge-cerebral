@@ -10,7 +10,6 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@headlessui/vue": "^1.7.16",
     "@heroicons/vue": "^2.0.18",
     "gray-matter": "^4.0.3",

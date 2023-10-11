@@ -1,8 +1,10 @@
+.env
 graveyard
 archive
 __deprecated__
 drafts
 .vscode
+src/blog/draft
 
 # Logs
 logs
