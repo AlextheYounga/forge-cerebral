@@ -7,7 +7,7 @@
         </ul>
     </div>
 
-    <div v-if="!tocOpen" class="mobile-toc fixed bottom-0 w-full z-50 body-font bg-stone-900/80">
+    <div v-if="!tocOpen" class="mobile-toc fixed lg:hidden bottom-0 w-full z-50 body-font bg-stone-900/80">
         <div class="border-b border-stone-700 mx-auto flex flex-wrap py-4 flex-col md:flex-row items-center px-4">
             <div class="flex relative w-full items-center">
                 <!-- Mobile TOC button -->
