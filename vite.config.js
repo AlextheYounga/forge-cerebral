@@ -1,16 +1,16 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import generateArticleMetadata from './plugins/articleMeta'
+import parseBlog from './plugins/parse-blog/index.js'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     {
-      name: 'custom-plugin-create-meta',
+      name: 'custom-plugin-parse-blog',
       buildStart() {
-        generateArticleMetadata()
+        parseBlog()
       }
     }
   ],

@@ -4,7 +4,11 @@ archive
 __deprecated__
 drafts
 .vscode
+
+# Blog
 src/blog/draft
+public/blog
+
 
 # Logs
 logs

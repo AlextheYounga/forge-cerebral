@@ -9,10 +9,9 @@ import router from './router'
 import store from './store'
 
 const app = createApp(App)
-const head = createHead()
+createHead()
 
 app.use(router)
 app.use(store)
-app.use(head)
 app.mount('#app')
 

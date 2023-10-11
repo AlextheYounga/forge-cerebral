@@ -1,10 +1,10 @@
 // node scripts/generateArticleDirectory.js
-import fs from 'fs'
+import fs from 'fs-extra'
 import { startCase } from 'lodash'
 import collectMetadata from './functions/collectMetadata'
 import { color} from 'console-log-colors';
 
-function generateArticleMetadata() {
+function parseBlog() {
     const blogFolder = 'src/blog'
     const blogTopics = fs.readdirSync(blogFolder)
 
@@ -56,8 +56,13 @@ function generateArticleMetadata() {
     fs.writeFileSync('src/meta/articles.json', JSON.stringify(blogList, null, 4))
     fs.writeFileSync('src/meta/metadata.json', JSON.stringify(blogHead, null, 4))
     fs.writeFileSync('src/meta/directory.json', JSON.stringify(blogDirectory, null, 4))
-
     console.log(color.green('Article directory generated!'))
+
+    //Copying blog files
+    fs.copySync('src/blog', 'public/blog', { overwrite: true })
+    console.log(color.green('Blog uploaded to public!'))
+
+    
 }
 
-export default generateArticleMetadata
+export default parseBlog

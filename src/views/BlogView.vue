@@ -54,8 +54,8 @@ export default {
 
             useHead(articleMeta)
 
-            const path = route.split('/blog/')[1]
-            const filePath = `/src/blog/${path}.md`
+            const filePath = `${route}.md`
+            
             this.markdownFilePath = filePath
         } else {
             this.$router.push({ path: '/blog' })
