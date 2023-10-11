@@ -54,8 +54,8 @@ export default {
 
             useHead(articleMeta)
 
-            const filePath = `${route}.md`
-            
+            const filePath = '/content' + `${route}.md`
+
             this.markdownFilePath = filePath
         } else {
             this.$router.push({ path: '/blog' })

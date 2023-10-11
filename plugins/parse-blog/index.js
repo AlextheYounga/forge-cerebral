@@ -59,7 +59,7 @@ function parseBlog() {
     console.log(color.green('Article directory generated!'))
 
     //Copying blog files
-    fs.copySync('src/blog', 'public/blog', { overwrite: true })
+    fs.copySync('src/blog', 'public/content/blog', { overwrite: true })
     console.log(color.green('Blog uploaded to public!'))
 
     
