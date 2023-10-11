@@ -12,7 +12,7 @@
     <NavBar />
     <main class="home max-w-7xl container mx-auto">
         <section class="body-font w-full">
-            <div class="container px-5 py-24 mx-auto">
+            <div class="container px-5 py-12 mx-auto">
                 <div class="flex flex-col text-center w-full mb-6">
                     <img class="w-72 mx-auto pb-1" :src="heroImg"/>
                     <!-- <h2 class="text-xs tracking-widest font-medium title-font mb-1">Alex Younger's</h2> -->
