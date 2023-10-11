@@ -8,7 +8,7 @@
     </div>
 
     <div v-if="markdownHtml" class="fixed right-5 top-[6rem] block w-1/6">
-        <AnchorNavigation :markdownHtml="markdownHtml"/>
+        <AnchorNavigation :markdownHtml="markdownHtml" />
     </div>
 </template>
 
@@ -17,7 +17,6 @@ import AnchorNavigation from '@/components/AnchorNavigation.vue';
 import MarkdownIt from 'markdown-it'
 import MarkdownItAnchor from 'markdown-it-anchor'
 import { textVide } from "text-vide";
-import matter from 'gray-matter';
 
 export default {
     name: 'ArticleContent',
@@ -47,13 +46,17 @@ export default {
         this.setupMarkdown();
     },
     methods: {
+        removeFrontMatter(text) {
+            const splitByDelimiter = text.split('---');
+            if (splitByDelimiter.length < 3) return text;
+            return splitByDelimiter.slice(2).join('---');
+        },
         async setupMarkdown() {
             const markdownFileContent = await fetch(this.markdownFilePath);
             const markdownText = await markdownFileContent.text();
-            const markdownMatter = matter(markdownText);
-            const markdownContent = markdownMatter.content;
+            const markdownWithoutFrontmatter = this.removeFrontMatter(markdownText);
 
-            this.markdownHtml = this.markdownToHtml(markdownContent);
+            this.markdownHtml = this.markdownToHtml(markdownWithoutFrontmatter);
             return this.processHtml()
         },
 
