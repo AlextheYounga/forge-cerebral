@@ -1,4 +1,102 @@
 {
+    "/blog/draft/breaking-the-cosmic-speed-limit": {
+        "title": "Breaking the Cosmic Speed Limit",
+        "href": "/blog/draft/breaking-the-cosmic-speed-limit",
+        "meta": [
+            {
+                "name": "title",
+                "content": "Breaking the Cosmic Speed Limit"
+            },
+            {
+                "name": "og:title",
+                "content": "Breaking the Cosmic Speed Limit"
+            },
+            {
+                "name": "twitter:title",
+                "content": "Breaking the Cosmic Speed Limit"
+            },
+            {
+                "name": "subtitle",
+                "content": "A New Hope for FTL"
+            },
+            {
+                "name": "og:subtitle",
+                "content": "A New Hope for FTL"
+            },
+            {
+                "name": "description",
+                "content": "300,000 kilometers per second. The constant velocity of light. This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it."
+            },
+            {
+                "name": "og:description",
+                "content": "300,000 kilometers per second. The constant velocity of light. This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it."
+            },
+            {
+                "name": "twitter:description",
+                "content": "300,000 kilometers per second. The constant velocity of light. This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it."
+            },
+            {
+                "name": "image",
+                "content": ""
+            },
+            {
+                "name": "og:image",
+                "content": ""
+            },
+            {
+                "name": "twitter:image",
+                "content": ""
+            },
+            {
+                "name": "author",
+                "content": "Alex Younger, alex@alextheyounger.me"
+            },
+            {
+                "name": "og:author",
+                "content": "Alex Younger, alex@alextheyounger.me"
+            },
+            {
+                "name": "category",
+                "content": "science"
+            },
+            {
+                "name": "og:category",
+                "content": "science"
+            },
+            {
+                "name": "type",
+                "content": "article"
+            },
+            {
+                "name": "og:type",
+                "content": "article"
+            },
+            {
+                "name": "site_name",
+                "content": "Forge Cerebral"
+            },
+            {
+                "name": "og:site_name",
+                "content": "Forge Cerebral"
+            },
+            {
+                "name": "url",
+                "content": "https://forgecerebral.com"
+            },
+            {
+                "name": "og:url",
+                "content": "https://forgecerebral.com"
+            },
+            {
+                "name": "canonical",
+                "content": "https://forgecerebral.com/blog/draft/breaking-the-cosmic-speed-limit"
+            },
+            {
+                "name": "og:canonical",
+                "content": "https://forgecerebral.com/blog/draft/breaking-the-cosmic-speed-limit"
+            }
+        ]
+    },
     "/blog/markets/the_bitcoin_volatility_problem": {
         "title": "The Bitcoin Volatility Problem, and Possible Solutions",
         "href": "/blog/markets/the_bitcoin_volatility_problem",
@@ -322,104 +420,6 @@
             {
                 "name": "og:canonical",
                 "content": "https://forgecerebral.com/blog/science/bioeconomics-how-biology-solved-economics"
-            }
-        ]
-    },
-    "/blog/science/breaking-the-cosmic-speed-limit": {
-        "title": "Breaking the Cosmic Speed Limit",
-        "href": "/blog/science/breaking-the-cosmic-speed-limit",
-        "meta": [
-            {
-                "name": "title",
-                "content": "Breaking the Cosmic Speed Limit"
-            },
-            {
-                "name": "og:title",
-                "content": "Breaking the Cosmic Speed Limit"
-            },
-            {
-                "name": "twitter:title",
-                "content": "Breaking the Cosmic Speed Limit"
-            },
-            {
-                "name": "subtitle",
-                "content": "A New Hope for FTL"
-            },
-            {
-                "name": "og:subtitle",
-                "content": "A New Hope for FTL"
-            },
-            {
-                "name": "description",
-                "content": "300,000 kilometers per second. The constant velocity of light. This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it."
-            },
-            {
-                "name": "og:description",
-                "content": "300,000 kilometers per second. The constant velocity of light. This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it."
-            },
-            {
-                "name": "twitter:description",
-                "content": "300,000 kilometers per second. The constant velocity of light. This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it."
-            },
-            {
-                "name": "image",
-                "content": ""
-            },
-            {
-                "name": "og:image",
-                "content": ""
-            },
-            {
-                "name": "twitter:image",
-                "content": ""
-            },
-            {
-                "name": "author",
-                "content": "Alex Younger, alex@alextheyounger.me"
-            },
-            {
-                "name": "og:author",
-                "content": "Alex Younger, alex@alextheyounger.me"
-            },
-            {
-                "name": "category",
-                "content": "science"
-            },
-            {
-                "name": "og:category",
-                "content": "science"
-            },
-            {
-                "name": "type",
-                "content": "article"
-            },
-            {
-                "name": "og:type",
-                "content": "article"
-            },
-            {
-                "name": "site_name",
-                "content": "Forge Cerebral"
-            },
-            {
-                "name": "og:site_name",
-                "content": "Forge Cerebral"
-            },
-            {
-                "name": "url",
-                "content": "https://forgecerebral.com"
-            },
-            {
-                "name": "og:url",
-                "content": "https://forgecerebral.com"
-            },
-            {
-                "name": "canonical",
-                "content": "https://forgecerebral.com/blog/science/breaking-the-cosmic-speed-limit"
-            },
-            {
-                "name": "og:canonical",
-                "content": "https://forgecerebral.com/blog/science/breaking-the-cosmic-speed-limit"
             }
         ]
     },

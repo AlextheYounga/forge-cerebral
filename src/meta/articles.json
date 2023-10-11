@@ -1,5 +1,14 @@
 [
     {
+        "href": "/blog/draft/breaking-the-cosmic-speed-limit",
+        "title": "Breaking the Cosmic Speed Limit",
+        "subtitle": "A New Hope for FTL",
+        "description": "300,000 kilometers per second. The constant velocity of light. This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it.",
+        "image": "",
+        "author": "Alex Younger, alex@alextheyounger.me",
+        "category": "science"
+    },
+    {
         "href": "/blog/markets/the_bitcoin_volatility_problem",
         "title": "The Bitcoin Volatility Problem, and Possible Solutions",
         "subtitle": "Can the BTC Vol Problem Be Overcome?",
@@ -29,15 +38,6 @@
         "original-source": "Exported from Substack.com on September 13, 2023.",
         "category": "science",
         "image": "https://substack-post-media.s3.amazonaws.com/public/images/23002237-966f-452f-8b43-fa51a4163ff0_1920x1200.jpeg"
-    },
-    {
-        "href": "/blog/science/breaking-the-cosmic-speed-limit",
-        "title": "Breaking the Cosmic Speed Limit",
-        "subtitle": "A New Hope for FTL",
-        "description": "300,000 kilometers per second. The constant velocity of light. This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it.",
-        "image": "",
-        "author": "Alex Younger, alex@alextheyounger.me",
-        "category": "science"
     },
     {
         "href": "/blog/science/the-universe-as-a-statistical-approximation",

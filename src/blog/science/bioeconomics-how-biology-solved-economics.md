@@ -96,7 +96,7 @@ In microbiology it is often referred to as *symbiosis*.
 
 The beauty of these ideas is that organisms can help each other while
 helping themselves, and even create a more complex system that benefits
-the whole --- and mind you, all of this is happening without any
+the whole  -  and mind you, all of this is happening without any
 organism "caring" for any other, or without even being conscious of
 other organisms. They happened upon a configuration that made sense for
 the largest numbers of organisms.

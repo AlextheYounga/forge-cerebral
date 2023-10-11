@@ -31,15 +31,35 @@ export default {
             markdownFilePath: null,
         }
     },
+    methods: {
+        checkDraftRoute(route) {
+            if (process.env.NODE_ENV == 'production') return false
+            if (process.env.NODE_ENV && route.includes('/draft/')) {
+                return true
+            }
+            return false
+        }
+    },
     created() {
         const route = this.$route.path
         const articleMeta = metadata[route]
 
-        useHead(articleMeta)
+        if (articleMeta) {
+            const draftRoute = route.includes('/draft/')
+            const allowDraftRoute = process.env.NODE_ENV == 'development'
 
-        const path = route.split('/blog/')[1]
-        const filePath = `/src/blog/${path}.md`
-        this.markdownFilePath = filePath
+            if (draftRoute && !allowDraftRoute) {
+                this.$router.push({ path: '/blog' })
+            }
+
+            useHead(articleMeta)
+
+            const path = route.split('/blog/')[1]
+            const filePath = `/src/blog/${path}.md`
+            this.markdownFilePath = filePath
+        } else {
+            this.$router.push({ path: '/blog' })
+        }
     }
 }
 </script>
