@@ -49,10 +49,7 @@
                                     <li>
                                         <ul role="list" class="space-y-1">
                                             <li v-for="item in directory" :key="item.name">
-                                                <a v-if="!item.children" :href="item.href" :class="[item.current ? 'active' : '', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold']">
-                                                    {{ item.name }}
-                                                </a>
-                                                <Disclosure as="div" v-else v-slot="{ open }">
+                                                <Disclosure as="div" v-slot="{ open }">
                                                     <DisclosureButton :class="[item.current ? 'active' : '', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold']">
                                                         <ChevronRightIcon :class="[open ? 'rotate-90 active' : '', 'h-5 w-5 shrink-0']" aria-hidden="true" />
                                                         {{ item.name }}
@@ -104,10 +101,7 @@
                 <li>
                     <ul role="list" class="space-y-1">
                         <li v-for="item in directory" :key="item.name">
-                            <a v-if="!item.children" :href="item.href" :class="[item.current ? 'active' : '', 'block rounded-md py-2 pr-2 pl-10 text-sm leading-6 font-semibold']">
-                                {{ item.name }}
-                            </a>
-                            <Disclosure as="div" v-else defaultOpen v-slot="{ open }">
+                            <Disclosure as="div" defaultOpen v-slot="{ open }">
                                 <DisclosureButton :class="[item.current ? 'active' : '', 'flex items-center w-full text-left rounded-md p-2 gap-x-3 text-sm leading-6 font-semibold']">
                                     <ChevronRightIcon :class="[open ? 'active rotate-90' : '', 'h-5 w-5 shrink-0']" aria-hidden="true" />
                                     {{ item.name }}
