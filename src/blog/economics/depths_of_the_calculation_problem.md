@@ -249,20 +249,3 @@ There is one loophole to this: you could theoretically predict the
 future state of the market with perfect, 100% accuracy if you were
 isolated to a closed system where you could never influence the market
 with that new knowledge, rendering this knowledge completely useless.
-
-::: " component-name="SubscribeWidgetToDOM"}
-::: 
-::: preamble
-Thanks for reading Apes With Nukes! Subscribe for free to receive new
-posts and support my work.
-:::
-
-::: fake-input-wrapper
-::: fake-input
-:::
-
-::: fake-button
-:::
-:::
-:::
-:::
