@@ -8,6 +8,7 @@ drafts
 # Blog
 src/blog/draft
 public/content/blog
+src/meta/**
 
 
 # Logs
