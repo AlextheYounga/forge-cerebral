@@ -15,13 +15,14 @@ category: "science"
 ### Introduction
 300,000 kilometers per second. The constant velocity of light.
 
-This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins and everyone has forgotten how to defend it. 
+This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it. 
 
-But even Einstein himself struggled to defend this point, and those who studied his life claim he wrestled with this idea *to the point of despair.*
+But even Einstein himself struggled to defend this point, and those who studied his life claim he wrestled with this idea *to the point of despair.* The idea was not truly of Einstein's making, but borrowed from the works of Lorentz and Maxwell. All three of these men had a common problem. They were all scrambling to maintain a theory they had spent their lives defending, the luminiferous aether, and this theory had just been proven impossible.
 
-It is this singular assumption, the constant velocity of light, that has made much of modern theoretical physics unintelligible and unworkable. It is this postulate that builds the foundation of all relativity theory
+It is this singular assumption, the constant velocity of light, that builds the foundation of all relativity theory, and it is this postulate that has made much of modern theoretical physics unintelligible and unworkable. To pull on this thread is liable to unravel nearly a century of thought. This pales in comparison to 
 
-To pull on this thread is liable to unravel decades of thought, so I must proceed with care.
+This paper is not meant to convince the scientific establishment 
+As I've seen in my study of this topic, if you pull on this thread, you are liable to unravel not only decades of thought, but countless careers, institutions, and billions of dollars. 
 
 On its own the postulate is logically incoherent, and requires additional theories like time dilation and length contraction in order to remain logically valid. But these theories bring an even greater number of paradoxes which again require additional theories to resolve. 
 
@@ -30,12 +31,12 @@ This is a sign that we are barking up the wrong tree and must reexamine our unde
 ## Abstract
 My research has brought me to the following conclusions:
 
-1.  The constant velocity of light postulate is riddled with logical paradoxes.
+1.  The constant velocity of light postulate is riddled with unresolvable logical paradoxes.
 2.  There is no experiment which has ever proved that light speed is fundamentally constant.
 3.  The behavior of light can be largely explained using Newtonian mechanics.
 
 
-## The Problems of Constant Velocity
+## Part 1: The Logic
 
 > Light has a constant velocity in all inertial reference frames.
 
@@ -55,7 +56,7 @@ How can this be? Well, it can't - not by itself. Even Einstein will tell you tha
 
 There is no debate that this notion, on its own, is logically invalid. The only way any of this becomes workable is by adding two new ideas: length contraction and time dilation. 
 
-Here is Einstien himself explaining this very problem by imagining what would happen if we were to measure a light beam moving in the same direction as a moving carriage.
+Here is Einstein himself explaining this very problem by imagining what would happen if we were to measure a light beam moving in the same direction as a moving carriage.
 
 > **The velocity of propagation of a ray of light relative to the
 > carriage thus comes out smaller than c**.
@@ -84,12 +85,12 @@ Here is Einstien himself explaining this very problem by imagining what would ha
 RELATIVITY THE SPECIAL AND GENERAL THEORY (pg 23)\
     -ALBERT EINSTEIN
 
-## Length Contraction
-The best way that I have heard to explain length contraction is by imagining you are at the beach. First, let's talk about what a normal day at a very familiar Newtonian beach looks like, where all the physics makes sense, and then we will envision a beach that satisfies Einstein.
+### Length Contraction
+The best way that I have heard to explain the real consequences of length contraction is by imagining you are at the beach. First, let's talk about what a normal day at a very familiar Newtonian beach looks like, where all the physics makes sense, and then we will envision a beach that satisfies Einstein.
 
 We will do just a little bit of math, but it is very simple math, no need to worry. If you're familiar with basic physics, this might be worth skipping over, but I should warn you that things will get weird here very soon, and it may be worth reviewing the basics.
 
-### A Day at the Beach
+#### A Day at the Beach
 Imagine you are standing on the shore of an ocean.
 
 You see the waves coming towards you, a new wave crashing every second. We’ll say this is the frequency of the ocean, 1 wave per second. The symbol for frequency is ( ƒ ), so this would be 1ƒ.
@@ -114,7 +115,7 @@ Hopefully this makes perfect sense so far; this is exactly the kind of thing we 
 
 But this is not how Einstein claimed light works.
 
-### A Beach to Satisfy Einstein
+#### A Beach to Satisfy Einstein
 We’re now at a different beach, an Einsteinian beach, where everything is, as Einstein would say, "so natural and simple", (yeah, right). 
 
 We will imagine that the ocean behaves in the same way that Einstein claims light behaves.
@@ -131,12 +132,68 @@ Every wave now contracts to 1 meter in length in order to maintain our original 
 
 It is not a perception issue either, the ocean is now physically different. The distance between each wave is now larger. Space itself has contracted in response to our movement forward.
 
-Remember, the speed of a wave is ƒ * λ. This is how the math behind relativity works. If we simply adjust the wavelength value in response to any change in the frequency that we would see as a result of the motion of an observer, we will always retain a constant velocity of our wave. Einstein says that space itself changes in response to increases in speed. 
+Remember, the speed of a wave is ƒ * λ. This is how the math behind relativity works. If we simply adjust the wavelength value in response to any change in the frequency that we would see as a result of the motion of an observer, we will always retain a constant velocity of our wave. 
 
-According to Einstein, all objects will experience this phenomenon when moving at significant fractions of the speed of light. But as we will soon see, this introduces some serious problems. 
+Within the framework of relativity, space itself must change in response to increases in speed. On the flip-side, objects themselves will also experience this length contraction due to increase in speed. Keep in mind that these changes can only become noticeable when these objects are moving at a significant fraction of the speed of light, but for our thought experiment, let's exaggerate the speed requirements simply to analyze the logical conundrums we will encounter at greater speeds. 
 
-Now, as we're walking into the ocean, let's imagine there is another person standing on the Einstieian beach who is watching us. What do they see? Will they see the ocean contract in front of our eyes?
+Now, as we're walking into the ocean, let's imagine there is another person standing on the Einsteinian beach who is watching us. What do they see? Will they see the ocean contract in response to our movement?
 
-No, according to Einstein's principles, they will watch us become thinner. 
+No, according to relativity, they will watch us become thinner. The observer on the beach will not be able to agree with our measurements of the ocean as we are moving towards it. We will see a contracted ocean, while the observer will see a contracted man. This result is due to assumption that the speed of light must remain constant, and one of the theories created by Henrick Lorentz, what is known as the "Lorentz Transformation". 
+
+So, to recap, from this thought experiment we can gather that, based on our velocity, the universe seems to present us alternative versions of reality. On our Einsteinian beach, the ocean itself contracts in response to our movement towards it, and this is not simply the appearance of the ocean contracting - space itself has actually changed. And for the stationary observer watching us, they will see no such change in the ocean, but a change only in the length of the moving object or observer. 
+
+Just in case there is any confusion left about the mainstream positions of relativity, here is one more short thought experiment.
+
+Imagine a square room, 50 feet by 50 feet in area, containing two people. One of these people is The Flash, who can sprint at speeds approaching the speed of light. The other person is someone with a slow motion camera capable of capturing The Flash while at high speed. 
+
+The Flash proceeds to run near the speed of light to the opposite side of the room. The Flash is able to reach speeds resulting in a Lorentz transformation factor of 10, meaning that in the eyes of the FLash, the opposite side of the room is now only 5 feet ahead of him. From the perspective of the cameraman, The Flash, the man himself, is now only a sliver of himself, thinned to a horrific 1/10 of his original width. 
+
+From these two perspectives, neither man can agree as to the objective size of the room, as length is no longer an objective property of the universe. 
+
+### A Quick Note on Logic
+In logic, there is a very important rule, arguably the most important rule of all, called “the law of identity.” This rule is very simple. 
+
+>Things are the way that they are, and they are not the way they are not.
+
+If something defies this rule, we can be certain it is wrong. This has nothing to do with man's reasoning ability or argumentation, but coherence of the universe itself. In the absence of this rule, existence becomes unworkable. For instance, how could something even exist if it could not exist at the same time? Simple, this is a true metaphysical impossibility, meaning it could never be the case in any possible form of existence. 
+
+Logic is a property of existence. If something exists, it has features of existence, and those features have properties. Those properties are what we call logic. For instance, an object exists, and it has the features of 4 equal sides. One of the properties of having 4 equal sides is that it can never have the feature of roundness. That's logic. My thinking had nothing to do with it, it is true regardless of my rational thought about this objective property of existence. It doesn't matter what universe you place this object, if it has 4 equal sides, it will never have the features of roundness.
+
+This is what Schrodinger was trying to explain to the Copenhagen physicists with his famous cat thought experiment, but the point went over their heads. Many of them still don't really understand it. They ironically parade the idea around like a talking point for the complexity of the universe. You'd have to go to college to be that confused.
+
+It's not complex. It's perhaps the simplest thing imaginable, the most irreducible property of existence. Something cannot be a thing and its opposite. A cat cannot be alive and dead. He was trying to tell them they were wrong, and they were wrong.  Thankfully the Copenhagen interpretation of quantum physics has now started to fall out of favor due to its many logical conundrums. 
+
+So when I now present this exact problem to relativity, we can know for certain that the theory is unworkable. 
+
+### The Consequences of Relative Space
+Imagine a train must occasionally pass over a bridge. This bridge is 1/10 the length of the train. The engineers never considered making the bridge strong enough to support more than 1/10 section of train at a time, as 1/10 of a train is all that could ever fit on the bridge at any given moment. 
+
+But time has passed and there has been a major breakthrough. Someone has invented a train that can travel at near light speed, and they've appropriately named it The Solar Express. 
+
+The Solar Express can achieve speeds so great that it experiences a Lorentz transformation factor of 10, meaning it will contract to 1/10 of its original size as it reaches this speed. 
+
+An engineer points out that this is a serious problem, as the bridge it will have to pass over can only support 1/10 of the bridge. From the engineer's perspective, standing stationary watching the bridge, the entire train will indeed be able to fit onto the bridge, collapsing the bridge. 
+
+The conductor of The Solar Express says there's nothing to worry about. From his perspective, it will be the bridge itself that contracts to a 10th of its original size, and the train will be able to pass over it without issue. The conductor, being a persuasive man, is able to convince everyone to let him drive the train across the bridge to prove it.
+
+The train hurls down the tracks at near light speed, its length becoming shorter and shorter until he reaches the bridge. What happens next? Who is right?
+
+According to Einstein and the theory of relativity, they are both right. What we have here is Schrodinger's bridge, which is simultaneously collapsed and stable. 
+
+It is not that the bridge or the train *appears* shorter due to speed, they are *actually* shorter, according to Einstein - in the same way that the wavelength of light must contract due to the motion of the emitter. 
+
+And this is unworkable. It violates the law of identity. Things are no longer the way that they are. What we've essentially done here is broken all coherence, it may as well be a blue screen of death for the universe. 
+
+There are countless similar thought experiments which show the unworkability of relativity theory. I have seen physicists flail trying to resolve them by coming up with bizarre, half-baked notions like *relativistic rigidity*, or other such reasons as to why reality can give us multiple versions of itself. This is simply kicking the intellectual can down the road. We will have to address the fact that when the features of existence for space itself become relative, we begin to lose coherence in the universe. What we're doing here is the equivalent of trying to force a square to be round.
+
+## Part 2: History & Experiments
+
+How did we get here?
+
+This was the most painstaking part of researching this topic - tracing back the thought. Digging up 150 year old papers is not easy even in the information age.
+
+Let's start with an experiment that changed the world, the Michelson-Morley experiment. 
+
+### Michelson-Morley
 
 
