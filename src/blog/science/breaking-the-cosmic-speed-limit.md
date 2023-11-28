@@ -17,16 +17,13 @@ category: "science"
 
 This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it. 
 
-But even Einstein himself struggled to defend this point, and those who studied his life claim he wrestled with this idea *to the point of despair.* The idea was not truly of Einstein's making, but borrowed from the works of Lorentz and Maxwell. All three of these men had a common problem. They were all scrambling to maintain a theory they had spent their lives defending, the luminiferous aether, and this theory had just been proven impossible.
+But even Einstein himself struggled to defend this point, and those who studied his life [claim he wrestled with this idea *to the point of despair.*](https://history.aip.org/exhibits/einstein/essay-einstein-relativity.htm) The idea was not truly of Einstein's making, but borrowed from the works of Lorentz and Maxwell. All three of these men had a common problem. They were all scrambling to maintain a theory they had spent their lives defending, the luminiferous cosmic aether, and this theory had just been proven unlikely.
 
-It is this singular assumption, the constant velocity of light, that builds the foundation of all relativity theory, and it is this postulate that has made much of modern theoretical physics unintelligible and unworkable. To pull on this thread is liable to unravel nearly a century of thought. This pales in comparison to 
+It is this singular assumption, the constant velocity of light, that builds the foundation of all relativity theory, and it is this postulate that has made much of modern theoretical physics unintelligible and unworkable. To pull on this thread is liable to unravel nearly a century of thought.
 
-This paper is not meant to convince the scientific establishment 
-As I've seen in my study of this topic, if you pull on this thread, you are liable to unravel not only decades of thought, but countless careers, institutions, and billions of dollars. 
+In my research on this topic, I have been constantly reminded of the force that drives the vast majority of people to the beliefs they hold: social status. Einstein was a super-star of his time and his fame made relativity a high-status belief. To question its validity is inherently low-status, and few accomplished physicists take the risk - despite knowing full-well the unworkability of its assumptions. But there are accomplished physicists who buck the trend, and I will include them here. 
 
-On its own the postulate is logically incoherent, and requires additional theories like time dilation and length contraction in order to remain logically valid. But these theories bring an even greater number of paradoxes which again require additional theories to resolve. 
-
-This is a sign that we are barking up the wrong tree and must reexamine our underlying assumptions. And when we do that, what we find is that light probably isn't as special as we might think. 
+The assumption of the constant velocity of light requires additional assumptions, like time dilation and length contraction, in order to remain logically valid. But these theories bring an even greater number of paradoxes which again require additional theories to resolve. This is a sign that we are barking up the wrong tree and must reexamine our underlying assumptions. And when we do that, what we find is that light probably isn't as special as we might think. 
 
 ## Abstract
 My research has brought me to the following conclusions:
@@ -34,6 +31,21 @@ My research has brought me to the following conclusions:
 1.  The constant velocity of light postulate is riddled with unresolvable logical paradoxes.
 2.  There is no experiment which has ever proved that light speed is fundamentally constant.
 3.  The behavior of light can be largely explained using Newtonian mechanics.
+
+
+## What Relativity Is And Isn't
+It is not true to say that Relativity overturned the Newtonian physics. Physics is, as a rule, Newtonian, and only in a few special cases do we decide to diverge from his principles.
+
+Relativity is largely an extension of Newtonian mechanics. Einstein's mass-energy equivalence, (E = mc2), is nothing that Newton would have disagreed with. Though Newton did not pursue this particular problem with the same vigor as Einstein, Newton speculated that mass and energy were likely equivalent.
+
+In 1704 Sir Isaac Newton wrote in his revolutionary book “Opticks”:
+
+>"Do not Bodies and Light act mutually upon one another that is to say, Bodies upon Light in emitting, reflecting, refracting and inflecting it, and Light upon Bodies for heating them, and putting their parts into a vibrating motion wherein heat consists?" 
+>"Gross bodies and light are convertible into one another..."
+
+There are many aspects of Relativity that people seem to think conflict with Newtonian mechanics, such as gravitational lensing, redshifting and blueshifting of light, and black holes. All of which can be explained within the basic principles of Newtonian mechanics, even if Newton's original measurements were somewhat incorrect. 
+
+
 
 
 ## Part 1: The Logic
@@ -53,8 +65,6 @@ This is intuitive. An object's velocity cannot be logically dissociated from the
 But Einstein claims that light does not behave this way. The speed of the bullet would be equal to 850mph in both instances, he claims. It wouldn't even matter if the car was driving at 850mph. Both the driver would record a speed of 850mph, and the person standing still would also record a speed of 850mph.
 
 How can this be? Well, it can't - not by itself. Even Einstein will tell you that this assertion by itself makes no logical sense whatsoever. 
-
-There is no debate that this notion, on its own, is logically invalid. The only way any of this becomes workable is by adding two new ideas: length contraction and time dilation. 
 
 Here is Einstein himself explaining this very problem by imagining what would happen if we were to measure a light beam moving in the same direction as a moving carriage.
 
@@ -85,12 +95,14 @@ Here is Einstein himself explaining this very problem by imagining what would ha
 RELATIVITY THE SPECIAL AND GENERAL THEORY (pg 23)\
     -ALBERT EINSTEIN
 
+There is no debate that this notion, on its own, is logically invalid. The only way any of this becomes workable is by adding two new ideas: length contraction and time dilation. 
+
 ### Length Contraction
 The best way that I have heard to explain the real consequences of length contraction is by imagining you are at the beach. First, let's talk about what a normal day at a very familiar Newtonian beach looks like, where all the physics makes sense, and then we will envision a beach that satisfies Einstein.
 
 We will do just a little bit of math, but it is very simple math, no need to worry. If you're familiar with basic physics, this might be worth skipping over, but I should warn you that things will get weird here very soon, and it may be worth reviewing the basics.
 
-#### A Day at the Beach
+#### A Day at the Newtonian Beach
 Imagine you are standing on the shore of an ocean.
 
 You see the waves coming towards you, a new wave crashing every second. We’ll say this is the frequency of the ocean, 1 wave per second. The symbol for frequency is ( ƒ ), so this would be 1ƒ.
@@ -116,11 +128,9 @@ Hopefully this makes perfect sense so far; this is exactly the kind of thing we 
 But this is not how Einstein claimed light works.
 
 #### A Beach to Satisfy Einstein
-We’re now at a different beach, an Einsteinian beach, where everything is, as Einstein would say, "so natural and simple", (yeah, right). 
+We’re now at a different beach, an Einsteinian beach.
 
-We will imagine that the ocean behaves in the same way that Einstein claims light behaves.
-
-We’re stationary on the shore of the Einsteinian beach, just taking in the sun. We see that the waves crash at a frequency of 1 wave per second, and the waves here are about 2 meters long each. So the speed of the waves are 2 m/s - the same as our last beach.
+We’re stationary on the shore of the Einsteinian beach. We see that the waves crash at a frequency of 1 wave per second, and the waves here are about 2 meters long each, the same as our last beach. So the speed of the waves are 2 m/s.
 
 **But this time, this speed is constant. The waves will always travel at 2 m/s.**
 
@@ -186,6 +196,13 @@ And this is unworkable. It violates the law of identity. Things are no longer th
 
 There are countless similar thought experiments which show the unworkability of relativity theory. I have seen physicists flail trying to resolve them by coming up with bizarre, half-baked notions like *relativistic rigidity*, or other such reasons as to why reality can give us multiple versions of itself. This is simply kicking the intellectual can down the road. We will have to address the fact that when the features of existence for space itself become relative, we begin to lose coherence in the universe. What we're doing here is the equivalent of trying to force a square to be round.
 
+### Light Under Newtonian Mechanics 
+The fundamental conflict between relativity and Newtonian mechanics centers on what aspect of light changes in response to a change in the motion of the emitter. In relativity, the speed of light remains constant, but the wavelength (space itself) changes relative to the speed of the emitter. Under normal Newtonian mechanics, the wavelength would stay constant because space is treated as absolute - the frequency and the speed of light would change in response to the emitter's motion.
+
+What makes this such a confusing subject is that all of these aspects of light are related to each other, and each paradigm could explain the behavior of light in their own way. But relativity makes more profound assumptions, that the universe itself responds to motion and adjusts accordingly.
+
+Redshifting and blueshifting of light are explained by the frequency of light, not the wavelength. All color comes from the frequency of light. Newtonian mechanics could explain redshifting and blueshifting with equal validity to Einsteinian relativity. Under relativity, Einstein posits that a star moving towards us undergoes a relativistic Doppler shift where the wavelength contracts, which simultaneously increases the frequency of light and therefore causes a blue color. But under Newtonian mechanics, a star moving towards us would simply result in a faster speed of light from our perspective. 
+
 ## Part 2: History & Experiments
 
 How did we get here?
@@ -195,5 +212,11 @@ This was the most painstaking part of researching this topic - tracing back the 
 Let's start with an experiment that changed the world, the Michelson-Morley experiment. 
 
 ### Michelson-Morley
+For a long time, hundreds of years, a dominant theory in physics was the theory of the cosmic aether - the medium of space that allows light, and maybe even gravity to propagate in a vacuum. The Michelson-Morley experiment set out to prove the existence of the cosmic aether, but was unable to detect it. This result was considered a turning point in physics, where the cosmic aether hypothesis was largely abandoned. 
 
+[The best video](https://www.youtube.com/watch?v=lrbVwLRRl3o) I could find describing the details of the Michelson-Morley experiment was created by professor [John Howell in Jerusalem](https://scholar.google.com/citations?user=dWILJsEAAAAJ&hl=en). I was quite surprised to see this comment from him in an exchange in the comments of his video, as I did not intentionally seek out someone who was critical of Relativity.
+
+>I have constructed over 100 working interferometers during the past 20 years.  Each one of them has proven to me that the velocity of light is dependent on the velocity of the emitting source. 
+
+You may be tempted to think this idea of an aether is silly, but many physicists even today hold sympathy with various forms of this idea. The existence of an aether could help explain many phenomenon that appears to be "spooky action at a distance." However, we have yet to make any measurement of such a material
 
