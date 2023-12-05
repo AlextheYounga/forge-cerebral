@@ -46,7 +46,28 @@ In 1704 Sir Isaac Newton wrote in his revolutionary book “Opticks”:
 There are many aspects of Relativity that people seem to think conflict with Newtonian mechanics, such as gravitational lensing, redshifting and blueshifting of light, and black holes. All of which can be explained within the basic principles of Newtonian mechanics, even if Newton's original measurements were somewhat incorrect. 
 
 
+## A Quick Note on Logic
+In logic, there is a very important rule, arguably the most important rule of all, called “the law of identity.” This rule is very simple.
 
+>Things are the way that they are, and they are not the way they are not.
+
+I need the reader to understand this because when I point out later how relativity violates this principle, we can be certain this theory is unworkable. 
+
+The question is, how do we know what is real? How do we know what must be true?
+
+If something defies this rule, "the law of identity", we can be certain that thing is wrong. If things are no longer the way they are, the universe itself becomes unworkable. As long as existence continues, the universe is coherent. If we lose coherence, we ultimately lose existence itself.
+
+Do you disagree? Tell me then if something can exist and not exist at the same time. Look past the words - think of the concept of existence and the concept of non-existence, and explain how these two concepts are compatible in any shape or form.
+
+You cannot, because it is a true metaphysical impossibility. It is not only false in this universe, but in all possible universes.
+
+Logic is a property of existence. If something exists, it has features of existence, and those features have properties. Those properties are what we call logic. For instance, an object exists, and it has the features of 4 equal sides. One of the properties of having 4 equal sides is that it can never have the feature of roundness. That's logic. My thinking had nothing to do with it, it is true regardless of my rational thought about this objective property of existence. It doesn't matter what universe you place this object, if it has 4 equal sides, it will never have the features of roundness.
+
+This is what Schrodinger was trying to explain to the Copenhagen physicists with his famous cat thought experiment, but the point went over their heads. Many of them still don't really understand it. They ironically parade the idea around like a talking point for the complexity of the universe. He was trying to tell them they were wrong, and they were wrong. Thankfully the Copenhagen interpretation of quantum physics has now started to fall out of favor due to its many logical conundrums. 
+
+It's not complex. It's perhaps the simplest thing imaginable, the most irreducible property of existence. But it's also not intuitive.
+
+So when I now present this exact problem to relativity, we can know for certain that the theory is unworkable. 
 
 ## Part 1: The Logic
 
@@ -102,78 +123,51 @@ The best way that I have heard to explain the real consequences of length contra
 
 We will do just a little bit of math, but it is very simple math, no need to worry. If you're familiar with basic physics, this might be worth skipping over, but I should warn you that things will get weird here very soon, and it may be worth reviewing the basics.
 
-#### A Day at the Newtonian Beach
-Imagine you are standing on the shore of an ocean.
+#### A Day at an Einsteinian Beach
+Consider standing on the shore of what we might call, an Einsteinian beach, where the ocean takes on relativistic properties. 
 
-You see the waves coming towards you, a new wave crashing every second. We’ll say this is the frequency of the ocean, 1 wave per second. The symbol for frequency is ( ƒ ), so this would be 1ƒ.
+First, let's remind ourselves of a normal beach. 
 
-Between each wave is about **2 meters**, so the wavelength (with the symbol λ) will be 2, or 2λ. From here, we have all we need to obtain the speed of the ocean waves. 
+Standing on the shore of the beach, you watch the waves roll towards you, a new wave crashing every second. We’ll say this is the frequency of the ocean, 1 wave per second, (or 1ƒ).
 
->**The speed of the wave is equal to frequency × wavelength. (ƒλ)**
+Between each wave is about **2 meters**, so the wavelength will be 2, (or 2λ, with the symbol λ). From here, we have all we need to obtain the speed of the ocean waves. 
 
-So then, 1ƒ × 2λ = 2 m/s. Our waves are traveling at a speed of 2 m/s.
+>**The speed of a wave is equal to frequency × wavelength. (ƒλ)**
 
-Now imagine that you begin to walk towards the ocean. 
+We can calculate the speed of the waves with the following: 1ƒ × 2λ equals 2 meters per second (m/s). The waves are traveling at a speed of 2 m/s.
 
-We enter the water and continue walking forward directly into the oncoming waves. As you’re walking forward, you turn your head to the side and see the waves pass you by.
+Now, imagine that you begin walking out into the ocean. You notice that the waves can no longer be passing you by at 2 m/s. Where the waves were rolling onto the beach at one wave per second, you notice that 2 waves crash into your body every one second. From your perspective, the waves are now passing by at an increased frequency. 
 
-From your perspective, the waves are now passing by at an increased frequency. Before, we saw only 1 wave crash per second, but now we’re watching 2 crests of a wave pass by us every second.
+So now, in relation to our moving position, it would appear from our perspective as if the waves are moving at a speed of 2ƒ × 2λ = 4 m/s. Again, the waves are still moving at 2 m/s in relation to the beach, but from our now forward-moving perspective, they are now moving faster with relation to us.
 
-So now, in relation to our moving position, it would appear from our perspective as if the waves are moving at a speed of 2ƒ × 2λ = 4 m/s. Again, the waves are still moving at 2 m/s in relation to the beach, but from our now moving perspective, they now appear to be moving faster. This is a crucial point we will visit later.
+This is intuitive, this is what we're all used to.
 
-Now, knowing this, we could also calculate our own current speed by simply subtracting the apparent speed of the waves from the speed we originally measured while stationary. The waves now appear to be moving at 4 m/s, but when we were stationary, they were traveling at 2/ms. So, v1 - v2, our walking speed must be 2 m/s.
+Now let's visit the bizarre Einsteinian beach. On this beach, the waves will never move faster than 2 m/s, *under no circumstances. On this beach, a wave faster than 2 m/s in any perspective is physically impossible.
 
-Hopefully this makes perfect sense so far; this is exactly the kind of thing we experience when we go to the beach. And our movement in relation to other moving objects seriously effects our ability to measure any given thing.
+So we walk towards the waves on our Einsteinian beach, and something insane happens. 
 
-But this is not how Einstein claimed light works.
+Suddenly, right before our eyes, the entire landscape of the ocean changes. Every wavelength now contracts to 1 meter in length in order to maintain our original speed of 2 m/s.
 
-#### A Beach to Satisfy Einstein
-We’re now at a different beach, an Einsteinian beach.
+This is not a perception issue either, the ocean is now physically different. The distance between each wave is now physically shorter. Space itself adjusts in response to the observer's movement. The formula for wave speed, ƒ * λ, remains constant due to adjustments in wavelength corresponding to changes in frequency from the observer's motion.
 
-We’re stationary on the shore of the Einsteinian beach. We see that the waves crash at a frequency of 1 wave per second, and the waves here are about 2 meters long each, the same as our last beach. So the speed of the waves are 2 m/s.
+Now, as we're walking into the ocean, let's imagine there is another person standing on the Einsteinian beach, and they are witnessing us walk out into the ocean. What do they see? Will they see the ocean contract in response to our movement?
 
-**But this time, this speed is constant. The waves will always travel at 2 m/s.**
+No, According to relativity and the "Lorentz Transformation" mathematics it utilizes, that observer will watch us become thinner, not the ocean contracting. Remember, this is not simply a matter of perspective, the observer on the beach will never be able to agree with our measurements, and we will never be able to agree with their measurements. 
 
-Now we decide to walk towards the beach, and here is where everything becomes surreal.
+Einstein would claim that the laws of physics are the same for all observers, but as we will soon see, this is impossible under the relativistic paradigm. If relativity is true, then you must also believe that the universe offers up two distinct, incompatible versions of reality for each observer. 
 
-Suddenly, right before our eyes, the entire landscape of the ocean changes.
+So, to recap, from this thought experiment we can gather that, based on our velocity, the universe seems to present us alternative versions of reality. Length is no longer an objective property of the universe. On our Einsteinian beach, the ocean itself contracts in response to our movement towards it, and this is not simply the appearance of the ocean contracting - space itself has actually changed. And for the stationary observer watching us, they will see no such change in the ocean, but a change only in the length of the moving object or observer.
 
-Every wave now contracts to 1 meter in length in order to maintain our original speed of 2 m/s.
+#### The Flash Runs By A Slow Motion Camera
+Just in case there is any confusion left about the mainstream positions of relativity, here is one more short thought experiment that should sum up the theory nicely.
 
-It is not a perception issue either, the ocean is now physically different. The distance between each wave is now larger. Space itself has contracted in response to our movement forward.
+Imagine a square room, 50 feet by 50 feet in area, containing two people. One of these people is The Flash, who can sprint at speeds approaching the speed of light. The other person is someone with a slow motion camera capable of capturing The Flash while at high speed.
 
-Remember, the speed of a wave is ƒ * λ. This is how the math behind relativity works. If we simply adjust the wavelength value in response to any change in the frequency that we would see as a result of the motion of an observer, we will always retain a constant velocity of our wave. 
+The Flash proceeds to run near the speed of light to the opposite side of the room. The Flash is able to reach speeds resulting in a Lorentz transformation factor of 10, meaning that in the eyes of the FLash, the opposite side of the room is now only 5 feet ahead of him. 
 
-Within the framework of relativity, space itself must change in response to increases in speed. On the flip-side, objects themselves will also experience this length contraction due to increase in speed. Keep in mind that these changes can only become noticeable when these objects are moving at a significant fraction of the speed of light, but for our thought experiment, let's exaggerate the speed requirements simply to analyze the logical conundrums we will encounter at greater speeds. 
+From the perspective of the stationary cameraman, The Flash, the man himself, is now only a sliver of himself, thinned to a horrific 1/10 of his original width.
 
-Now, as we're walking into the ocean, let's imagine there is another person standing on the Einsteinian beach who is watching us. What do they see? Will they see the ocean contract in response to our movement?
-
-No, according to relativity, they will watch us become thinner. The observer on the beach will not be able to agree with our measurements of the ocean as we are moving towards it. We will see a contracted ocean, while the observer will see a contracted man. This result is due to assumption that the speed of light must remain constant, and one of the theories created by Henrick Lorentz, what is known as the "Lorentz Transformation". 
-
-So, to recap, from this thought experiment we can gather that, based on our velocity, the universe seems to present us alternative versions of reality. On our Einsteinian beach, the ocean itself contracts in response to our movement towards it, and this is not simply the appearance of the ocean contracting - space itself has actually changed. And for the stationary observer watching us, they will see no such change in the ocean, but a change only in the length of the moving object or observer. 
-
-Just in case there is any confusion left about the mainstream positions of relativity, here is one more short thought experiment.
-
-Imagine a square room, 50 feet by 50 feet in area, containing two people. One of these people is The Flash, who can sprint at speeds approaching the speed of light. The other person is someone with a slow motion camera capable of capturing The Flash while at high speed. 
-
-The Flash proceeds to run near the speed of light to the opposite side of the room. The Flash is able to reach speeds resulting in a Lorentz transformation factor of 10, meaning that in the eyes of the FLash, the opposite side of the room is now only 5 feet ahead of him. From the perspective of the cameraman, The Flash, the man himself, is now only a sliver of himself, thinned to a horrific 1/10 of his original width. 
-
-From these two perspectives, neither man can agree as to the objective size of the room, as length is no longer an objective property of the universe. 
-
-### A Quick Note on Logic
-In logic, there is a very important rule, arguably the most important rule of all, called “the law of identity.” This rule is very simple. 
-
->Things are the way that they are, and they are not the way they are not.
-
-If something defies this rule, we can be certain it is wrong. This has nothing to do with man's reasoning ability or argumentation, but coherence of the universe itself. In the absence of this rule, existence becomes unworkable. For instance, how could something even exist if it could not exist at the same time? Simple, this is a true metaphysical impossibility, meaning it could never be the case in any possible form of existence. 
-
-Logic is a property of existence. If something exists, it has features of existence, and those features have properties. Those properties are what we call logic. For instance, an object exists, and it has the features of 4 equal sides. One of the properties of having 4 equal sides is that it can never have the feature of roundness. That's logic. My thinking had nothing to do with it, it is true regardless of my rational thought about this objective property of existence. It doesn't matter what universe you place this object, if it has 4 equal sides, it will never have the features of roundness.
-
-This is what Schrodinger was trying to explain to the Copenhagen physicists with his famous cat thought experiment, but the point went over their heads. Many of them still don't really understand it. They ironically parade the idea around like a talking point for the complexity of the universe. You'd have to go to college to be that confused.
-
-It's not complex. It's perhaps the simplest thing imaginable, the most irreducible property of existence. Something cannot be a thing and its opposite. A cat cannot be alive and dead. He was trying to tell them they were wrong, and they were wrong.  Thankfully the Copenhagen interpretation of quantum physics has now started to fall out of favor due to its many logical conundrums. 
-
-So when I now present this exact problem to relativity, we can know for certain that the theory is unworkable. 
+From these two perspectives, neither man can agree as to the objective size of the room, as length is no longer an objective property of the universe.
 
 ### The Consequences of Relative Space
 Imagine a train must occasionally pass over a bridge. This bridge is 1/10 the length of the train. The engineers never considered making the bridge strong enough to support more than 1/10 section of train at a time, as 1/10 of a train is all that could ever fit on the bridge at any given moment. 
