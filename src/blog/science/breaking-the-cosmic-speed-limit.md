@@ -10,18 +10,14 @@ category: "science"
 # Breaking the Cosmic Speed Limit
 **A New Hope for FTL**
 
->*"We knew a million things we could hardly understand."*
-
 ### Introduction
 300,000 kilometers per second. The constant velocity of light.
 
-This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins or even how to defend it. 
+This is the number constantly ogled at us by every angle of modern science. It has been repeated for so long that most have forgotten its origins, and most importantly, that it has always been an **assumption**.
 
-But even Einstein himself struggled to defend this point, and those who studied his life [claim he wrestled with this idea *to the point of despair.*](https://history.aip.org/exhibits/einstein/essay-einstein-relativity.htm) The idea was not truly of Einstein's making, but borrowed from the works of Lorentz and Maxwell. All three of these men had a common problem. They were all scrambling to maintain a theory they had spent their lives defending, the luminiferous cosmic aether, and this theory had just been proven unlikely.
+The constant velocity of light is first and foremost a mathematical convenience. We cannot make the error of confusing mathematical pragmatism with fundamental truth. An empirical equation of a phenomenon is never an explanation or the cause of that phenomenon. A real explanation must answer the question of causality, which is asked by "why?".
 
-It is this singular assumption, the constant velocity of light, that builds the foundation of all relativity theory, and it is this postulate that has made much of modern theoretical physics unintelligible and unworkable. To pull on this thread is liable to unravel nearly a century of thought.
-
-In my research on this topic, I have been constantly reminded of the force that drives the vast majority of people to the beliefs they hold: social status. Einstein was a super-star of his time and his fame made relativity a high-status belief. To question its validity is inherently low-status, and few accomplished physicists take the risk - despite knowing full-well the unworkability of its assumptions. But there are accomplished physicists who buck the trend, and I will include them here. 
+It is this singular assumption, the constant velocity of light, that builds the foundation of all relativity theory, and it is this postulate that has made much of modern theoretical physics unintelligible and unworkable. To pull on this thread underminesZz nearly a century of thought.
 
 The assumption of the constant velocity of light requires additional assumptions, like time dilation and length contraction, in order to remain logically valid. But these theories bring an even greater number of paradoxes which again require additional theories to resolve. This is a sign that we are barking up the wrong tree and must reexamine our underlying assumptions. And when we do that, what we find is that light probably isn't as special as we might think. 
 
@@ -34,7 +30,7 @@ My research has brought me to the following conclusions:
 
 
 ## What Relativity Is And Isn't
-It is not true to say that Relativity overturned the Newtonian physics. Physics is, as a rule, Newtonian, and only in a few special cases do we decide to diverge from his principles.
+It is not true to say that Relativity overturned the Newtonian paradigm. Physics is, as a rule, Newtonian, and only in a few special cases do we decide to diverge from his principles.
 
 Relativity is largely an extension of Newtonian mechanics. Einstein's mass-energy equivalence, (E = mc2), is nothing that Newton would have disagreed with. Though Newton did not pursue this particular problem with the same vigor as Einstein, Newton speculated that mass and energy were likely equivalent.
 
@@ -45,32 +41,35 @@ In 1704 Sir Isaac Newton wrote in his revolutionary book “Opticks”:
 
 There are many aspects of Relativity that people seem to think conflict with Newtonian mechanics, such as gravitational lensing, redshifting and blueshifting of light, and black holes. All of which can be explained within the basic principles of Newtonian mechanics, even if Newton's original measurements were somewhat incorrect. 
 
+All of relativity falls, squarely, on a single assumption: the speed of light is constant. It is only by logical necessity of this first assumption that space and time must be relative. On its own, the constant velocity of light is an incoherent position, unless space and time are relative.
+
+The real debate falls to a single point: the constant velocity of light. It was this assumption that necessitates relative space and relative time, because a constant velocity of light is an incoherent position without those two additional theories. So the entirety of relativity falls to a single position, and only by logical extension of this first assumption do we get relative space and time. 
+
 
 ## A Quick Note on Logic
+I need the reader to understand a very important principle, because when I point out later how relativity violates this principle, we can be certain this theory is unworkable. 
+
 In logic, there is a very important rule, arguably the most important rule of all, called “the law of identity.” This rule is very simple.
 
 >Things are the way that they are, and they are not the way they are not.
 
-I need the reader to understand this because when I point out later how relativity violates this principle, we can be certain this theory is unworkable. 
-
 The question is, how do we know what is real? How do we know what must be true?
 
-If something defies this rule, "the law of identity", we can be certain that thing is wrong. If things are no longer the way they are, the universe itself becomes unworkable. As long as existence continues, the universe is coherent. If we lose coherence, we ultimately lose existence itself.
+If something defies this rule, we can be certain it is wrong. If things are no longer the way they are, the universe itself becomes unworkable. As long as existence continues, the universe is coherent. If we lose coherence, we ultimately must lose existence itself.
 
 Do you disagree? Tell me then if something can exist and not exist at the same time. Look past the words - think of the concept of existence and the concept of non-existence, and explain how these two concepts are compatible in any shape or form.
 
-You cannot, because it is a true metaphysical impossibility. It is not only false in this universe, but in all possible universes.
+This is a true metaphysical impossibility. It is not only false in this universe, but in all possible universes.
 
-Logic is a property of existence. If something exists, it has features of existence, and those features have properties. Those properties are what we call logic. For instance, an object exists, and it has the features of 4 equal sides. One of the properties of having 4 equal sides is that it can never have the feature of roundness. That's logic. My thinking had nothing to do with it, it is true regardless of my rational thought about this objective property of existence. It doesn't matter what universe you place this object, if it has 4 equal sides, it will never have the features of roundness.
+Logic is a property of existence. If something exists, it has features of existence, and those features have properties. Those properties are what we call logic. For instance, an object exists, and it has the features of 4 equal sides. One of the properties of having 4 equal sides is that it can never have the feature of roundness. That's logic. 
+
+My thinking about it has nothing to do with it, it is true regardless of thought. It doesn't matter what universe you place this object, if it has 4 equal sides, it will never have the features of roundness.
 
 This is what Schrodinger was trying to explain to the Copenhagen physicists with his famous cat thought experiment, but the point went over their heads. Many of them still don't really understand it. They ironically parade the idea around like a talking point for the complexity of the universe. He was trying to tell them they were wrong, and they were wrong. Thankfully the Copenhagen interpretation of quantum physics has now started to fall out of favor due to its many logical conundrums. 
 
-It's not complex. It's perhaps the simplest thing imaginable, the most irreducible property of existence. But it's also not intuitive.
-
-So when I now present this exact problem to relativity, we can know for certain that the theory is unworkable. 
+This is not complex, but it's also not intuitive. It's perhaps the simplest thing imaginable, the most irreducible property of existence.
 
 ## Part 1: The Logic
-
 > Light has a constant velocity in all inertial reference frames.
 
 The mainstream scientific perspective states confidently that light is constant in all inertial reference frames, which is to say that it does not matter how fast the source of the light is moving - it will remain constant.
