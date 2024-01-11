@@ -34,18 +34,42 @@ My research has brought me to the following conclusions:
 
 
 ## Waves
-The first bit of good news is that we don't have to concern ourselves here with whether or not light is a particle or a wave. The argument is the same regardless, and in either case, there is still a concept of *wavelength* and *frequency*. 
+
+### Measuring waves
+Before we can really dive deep into this, the reader must be familiar with some of the properties of waves, and we may need to dispel some simple confusions surrounding wavelength and frequency. 
+
+The first bit of good news is that we don't have to concern ourselves here with whether or not light is a particle or a wave. The argument is the same regardless. In either case, there is still a concept of *wavelength* and *frequency*. 
 
 Imagine you are in a poorly-made toll booth which has no windows. You don't actually see the cars driving by, but every time a car drives by, a little box with a red light bleeps on your desk. This light is currently bleeping once every second. Given only this information, what can you say about the cars driving by? 
 
 You can only say that a car drives by once a second, which is to say the frequency of cars is: one car per second. You have no other information, and no other information can be obtained. These cars could be driving by at 200 miles per hour, or they could be bumper to bumper, with only a few feet between each car. In other words, we have no concept of wavelength here. 
 
-Many people assume that wavelength and frequency are essentially one of the same thing, but there are extremely important distinctions here. From wavelength we can extract measures of space and distance, but we cannot extract this information from the frequency. And as with our toll-booth example above, with frequency, we can extract information about quantities, but nothing about distance. 
+Many people claim that wavelength and frequency are essentially one of the same thing, but there are extremely important distinctions here. From wavelength we can extract measures of space and distance, but we cannot extract this information from the frequency. And as with our toll-booth example above, with frequency, we can extract information about quantities, but nothing about distance. 
 
 But if we have both, **and only if we have both**, then we can measure speed. The speed of a wave is the frequency times the wavelength. 
 
-The only way you can get around this is if you introduce a constant speed limit or upper speed limit. If we know that every incoming car contains a governor that maxes out at 80mph, then we have all the information we need. 80mph is 35m/s, and with a frequency of 1 car per second, we know for a fact there is 35 meters between each car. 
+A common point of confusion comes from those who have studied physics at the surface level. They will say, "wavelength and frequency are inverses of each other" as a blanket statement. This is not true as a general rule, for the reasons I've stated above. Given only one of these variables, you cannot calculate the other. 
 
-All of this is very important, because as you will see, we tend to measure light in a box. The information we can extract from light is very limited. When we measure light, we are nearly always measuring the frequency, as this information is generally easier to obtain and there are far more practical uses for this information. 
+The confusion stems from what they've been taught about light. The wavelength and frequency can only be inverses if we introduce a constant speed or an upper speed limit. Of all the things in the universe, the only thing we give a constant speed is light, which should be a red flag in itself. 
+
+Going back to our toll booth example, if we know that every incoming car contains a governor that maxes out at 80mph, and we assume all cars are traveling at this maximum speed, then we have all the information we need. 80mph is 35m/s, and with a frequency of 1 car per second, we know for a fact there is 35 meters between each car. 
+
+Our toll booth example is important, because as you will see, we tend to measure light in a box. 
+
+The information we can extract from light is very limited. When we measure light, we are nearly always measuring the frequency, as this information is always easier to obtain and has far more practical use-cases. To measure wavelength, we have to redirect light in clever ways and then try to get an accurate measure of distances between two points. To measure frequency, the problem is much simpler, just start counting up, like counting the number of times the red light bleeps in the toll booth.
+
+### Color
+Your first instinct might be to ask, well what about color? Is this not how we measure the wavelength of light? 
+
+Color is better thought of as a measure of the energy levels of light. Light can have less or more energy, (which shouldn't really be possible with a constant speed limit, but more on this later), and we primarily measure the energy levels of light using the frequency. If you've ever watched the show Chernobyl, you may have heard them speak of *Cherenkov radiation*, which is a fascinating phenomenon. Cherenkov radiation is theorized to be the speed of light traveling faster than its supposed to inside of a given medium, creating a kind of sonic boom. The tremendous energy released gives off a fantastic blue color. 
+
+### The Doppler Effect
+We just mentioned sonic booms, and this leads us to a very important concept we will see all throughout this article: the Doppler Effect. The Doppler Effect is very simple. If you throw a ball while running, it will move faster than a ball thrown from a stationary position. A bullet fired from a moving vehicle travels faster than a bullet fired from a fixed position. And a wave of sound emitted from an accelerating plane might travel faster than the sound wave directly in front of it. 
+
+We can imagine a sonic boom in another way. The SR-71 Blackbird, one of the fastest planes ever built, was almost built to be a fighter plane, (under a different name YF-12A), until they realized that this bird moves at such high speed, the plane could run into its own bullets. Let's imagine how this might play out. Imagine you are accelerating in this plane as you are firing its onboard machine gun. This inherently means that each bullet fired from the machine gun will be faster than the last bullet fired, meaning that each new bullet could impact the bullet directly in front of it. And if you were accelerating fast enough, it's even possible that the bullet does not even have enough time to exit the barrel before the plane catches up to it, resulting in the bullet exploding inside the chamber. 
+
+This is very similar to what happens during a sonic boom. The waves emitted from the accelerated engine impact the waves directly in front of them.
 
 
+
+## What Relativity Is And Isn't
