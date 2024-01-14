@@ -65,15 +65,7 @@ Color is better thought of as a measure of the energy levels of light. Light can
 ## The Doppler Effect
 The phenomenon you will hear repeated most throughout this argument is variations of The Doppler Effect, sometimes referred to as *"Doppler shift"*, or when discussed under the paradigm of relativity, *"relativistic Doppler shift"*, since normal principles of the Doppler Effect do not apply to relativity in the same way. An understanding of this simple phenomenon in its entirety is a requirement. 
 
-The Doppler Effect is very simple. At its core, the principle is simply that speeds are added together. If you throw a ball while running, it will move faster than a ball thrown from a stationary position. A bullet fired from a moving vehicle travels faster than a bullet fired from a fixed position. And a sound wave emitted from an accelerating plane might travel faster than the sound wave directly in front of it, (a sonic boom).
-
-
-Speaking of sonic booms, before being able to grasp the problems of a constant velocity of light, the reader must fully understand the concept of the Doppler Effect, which is fairly straightforward.
-
-The Doppler Effect is fundamentally very simple. 
-
-In short, speeds are always added together. A 9mm bullet travels at 850mph. A bullet fired from a vehicle moving 50mph will travel at 900mph. We apply this concept to everything in the known universe *except for light.
-
+The Doppler Effect is very simple. At its core, the principle is simply that speeds are added together. If you throw a ball while running, it will move faster than a ball thrown from a stationary position. A bullet fired from a moving vehicle travels faster than a bullet fired from a fixed position. 
 
 
 ## What Relativity Is And Isn't
