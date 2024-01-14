@@ -34,10 +34,9 @@ My research has brought me to the following conclusions:
 
 
 ## Waves
+Before we can really dive deep into this, the reader must be familiar with some of the properties of waves, and we may need to dispel some simple confusions surrounding wavelength and frequency.
 
 ### Measuring waves
-Before we can really dive deep into this, the reader must be familiar with some of the properties of waves, and we may need to dispel some simple confusions surrounding wavelength and frequency. 
-
 The first bit of good news is that we don't have to concern ourselves here with whether or not light is a particle or a wave. The argument is the same regardless. In either case, there is still a concept of *wavelength* and *frequency*. 
 
 Imagine you are in a poorly-made toll booth which has no windows. You don't actually see the cars driving by, but every time a car drives by, a little box with a red light bleeps on your desk. This light is currently bleeping once every second. Given only this information, what can you say about the cars driving by? 
@@ -63,10 +62,15 @@ Your first instinct might be to ask, well what about color? Is this not how we m
 
 Color is better thought of as a measure of the energy levels of light. Light can have less or more energy, (which shouldn't really be possible with a constant speed limit, but more on this later), and we primarily measure the energy levels of light using the frequency. If you've ever watched the show Chernobyl, you may have heard them speak of *Cherenkov radiation*, which is a fascinating phenomenon. Cherenkov radiation is theorized to be the speed of light traveling faster than its supposed to inside of a given medium, creating a kind of sonic boom. The tremendous energy released gives off a fantastic blue color. 
 
-### The Doppler Effect
+## The Doppler Effect
+The phenomenon you will hear repeated most throughout this argument is variations of The Doppler Effect, sometimes referred to as *"Doppler shift"*, or when discussed under the paradigm of relativity, *"relativistic Doppler shift"*, since normal principles of the Doppler Effect do not apply to relativity in the same way. An understanding of this simple phenomenon in its entirety is a requirement. 
+
+The Doppler Effect is very simple. At its core, the principle is simply that speeds are added together. If you throw a ball while running, it will move faster than a ball thrown from a stationary position. A bullet fired from a moving vehicle travels faster than a bullet fired from a fixed position. And a sound wave emitted from an accelerating plane might travel faster than the sound wave directly in front of it, (a sonic boom).
+
+
 Speaking of sonic booms, before being able to grasp the problems of a constant velocity of light, the reader must fully understand the concept of the Doppler Effect, which is fairly straightforward.
 
-The Doppler Effect is fundamentally very simple. If you throw a ball while running, it will move faster than a ball thrown from a stationary position. A bullet fired from a moving vehicle travels faster than a bullet fired from a fixed position. And a sound wave emitted from an accelerating plane might travel faster than the sound wave directly in front of it, (a sonic boom).
+The Doppler Effect is fundamentally very simple. 
 
 In short, speeds are always added together. A 9mm bullet travels at 850mph. A bullet fired from a vehicle moving 50mph will travel at 900mph. We apply this concept to everything in the known universe *except for light.
 
