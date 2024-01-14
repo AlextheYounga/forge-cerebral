@@ -51,6 +51,7 @@ export default {
             if (splitByDelimiter.length < 3) return text;
             return splitByDelimiter.slice(2).join('---');
         },
+
         async setupMarkdown() {
             const markdownFileContent = await fetch(this.markdownFilePath);
             const markdownText = await markdownFileContent.text();

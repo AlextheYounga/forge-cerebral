@@ -41,8 +41,16 @@ body h1,
     color: var(--color-text-accent);
 }
 
+.subh {
+    margin-top: -3px;
+}
+
+li:not(.active-anchor) > .subh{
+    color: var(--color-subtext);
+}
+
 .active-anchor {
-    color: var(--color-accent);
+    color: var(--color-accent) !important;
 }
 
 .sidebar a,
@@ -272,3 +280,4 @@ h6:target {
     display: block;
     padding: 2rem 0;
 }
+

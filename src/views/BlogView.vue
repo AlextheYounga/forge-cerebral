@@ -14,9 +14,9 @@
 </template>
 
 <script>
+import { useHead } from 'unhead';
 import BlogNavigation from '@/components/BlogNavigation.vue';
 import ArticleContent from '@/components/ArticleContent.vue';
-import { useHead } from 'unhead';
 import metadata from '@/meta/metadata.json'
 
 export default {

@@ -2,7 +2,7 @@
     <div class="fixed right-5 top-[6rem] block w-1/6">
         <ul class="toc hidden lg:flex border-l border-stone-700 pl-2 grow flex-col gap-y-3 py-4">
             <li class="text-sm" v-for="header of headers" :key="header.id" :ref="header.id">
-                <a :href="`#${header.id}`">{{ header.text }}</a>
+                <a :class="anchorStyles(header.level)" :href="`#${header.id}`">{{ header.text }}</a>
             </li>
         </ul>
     </div>
@@ -115,6 +115,13 @@ export default {
                     })
                 }
             })
+        },
+        anchorStyles(level) {
+            if (parseInt(level) > 2) {
+                return 'subh ml-' + level.toString();
+            }
+
+            return '';
         },
         scrollHighlight() {
             const headerElements = this.getHeaderElements();
