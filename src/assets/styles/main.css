@@ -205,14 +205,14 @@ h6:target {
     border-top: 1px solid #dfe2e5;
 }
 
-#article-body tr:nth-child(2n) {
+/* #article-body tr:nth-child(2n) {
     background-color: #f6f8fa;
-}
+} */
 
 #article-body th,
 #article-body td {
     border: 1px solid #dfe2e5;
-    padding: 0.6em 1em;
+    padding: 0.4em 2em;
 }
 
 #article-body p a code {
