@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { useHead } from '@vueuse/head'
+import { useHead } from 'unhead'
 import NavBar from '@/components/NavBar.vue';
 import articles from '@/meta/articles.json'
 import { shuffle, range, take } from 'lodash'
@@ -40,7 +40,6 @@ useHead({
         { property: 'twitter:data2', content: post.value.type },
     ]
 });
-
 </script>
 
 <template>

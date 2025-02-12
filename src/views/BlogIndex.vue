@@ -43,7 +43,7 @@ import BlogNavigation from '@/components/BlogNavigation.vue';
 import articles from '@/meta/articles.json'
 import startCase from 'lodash/startCase'
 import { ref } from 'vue'
-import { useHead } from '@vueuse/head';
+import { useHead } from 'unhead'
 
 const post = ref({
     title: 'Forge Cerebral',

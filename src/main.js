@@ -1,7 +1,7 @@
 import './assets/styles/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
-import { createHead } from '@vueuse/head'
+import { createHead } from 'unhead'
 import router from './router'
 import store from './store'
 

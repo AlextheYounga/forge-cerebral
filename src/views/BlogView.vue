@@ -16,7 +16,7 @@
 <script>
 import BlogNavigation from '@/components/BlogNavigation.vue';
 import ArticleContent from '@/components/ArticleContent.vue';
-import { useHead } from '@vueuse/head'
+import { useHead } from 'unhead'
 
 export default {
     name: 'BlogView',
