@@ -117,7 +117,6 @@ export default {
             })
         },
         anchorStyles(level) {
-            console.log(level)
             if (parseInt(level) > 2) {
                 return 'subh ml-' + level.toString();
             }

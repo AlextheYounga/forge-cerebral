@@ -5,8 +5,8 @@
                 <BlogNavigation />
             </div>
 
-            <div v-if="markdownFilePath" class="content">
-                <ArticleContent :markdownFilePath="markdownFilePath" />
+            <div class="content">
+                <ArticleContent :markdownFilePath="this.markdownFilePath" />
             </div>
 
         </div>
@@ -14,10 +14,9 @@
 </template>
 
 <script>
-import { useHead } from 'unhead';
 import BlogNavigation from '@/components/BlogNavigation.vue';
 import ArticleContent from '@/components/ArticleContent.vue';
-import metadata from '@/meta/metadata.json'
+import { useHead } from '@vueuse/head'
 
 export default {
     name: 'BlogView',
@@ -25,41 +24,21 @@ export default {
         BlogNavigation,
         ArticleContent
     },
-
-    setup() {
-        return {
-            markdownFilePath: null,
+    props: {
+        markdownFilePath: {
+            type: String,
+            required: true
+        },
+        metadata: {
+            type: Object,
+            required: true
         }
     },
-    methods: {
-        checkDraftRoute(route) {
-            if (process.env.NODE_ENV == 'production') return false
-            if (process.env.NODE_ENV && route.includes('/draft/')) {
-                return true
-            }
-            return false
-        }
+    mounted() {
+        useHead({
+            title: this.$props.metadata.title,
+            meta: this.$props.metadata.meta
+        })
     },
-    created() {
-        const route = this.$route.path
-        const articleMeta = metadata[route]
-
-        if (articleMeta) {
-            const draftRoute = route.includes('/draft/')
-            const allowDraftRoute = process.env.NODE_ENV == 'development'
-
-            if (draftRoute && !allowDraftRoute) {
-                this.$router.push({ path: '/blog' })
-            }
-
-            useHead(articleMeta)
-
-            const filePath = '/content' + `${route}.md`
-
-            this.markdownFilePath = filePath
-        } else {
-            this.$router.push({ path: '/blog' })
-        }
-    }
 }
 </script>

@@ -1,8 +1,6 @@
 import { createStore } from 'vuex'
 import { checkDarkMode, checkBionicReading, setColorScheme, setBionicReading } from './assets/js/settings'
 
-
-
 // Create a new store instance.
 const store = createStore({
     state() {
