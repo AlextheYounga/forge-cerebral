@@ -5,7 +5,7 @@
                 <BlogNavigation />
             </div>
 
-            <div class="content">
+            <div v-if="this.markdownFilePath" class="content">
                 <ArticleContent :markdownFilePath="this.markdownFilePath" />
             </div>
 
@@ -16,7 +16,6 @@
 <script setup>
 import BlogNavigation from '@/components/BlogNavigation.vue';
 import ArticleContent from '@/components/ArticleContent.vue';
-import { defineProps } from 'vue';
 import { useHead } from 'unhead'
 
 const props = defineProps({
