@@ -5,8 +5,8 @@
                 <BlogNavigation />
             </div>
 
-            <div v-if="this.markdownFilePath" class="content">
-                <ArticleContent :markdownFilePath="this.markdownFilePath" />
+            <div v-if="props.markdownFilePath" class="content">
+                <ArticleContent :markdownFilePath="props.markdownFilePath" />
             </div>
 
         </div>
