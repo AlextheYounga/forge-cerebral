@@ -13,32 +13,25 @@
     </main>
 </template>
 
-<script>
+<script setup>
 import BlogNavigation from '@/components/BlogNavigation.vue';
 import ArticleContent from '@/components/ArticleContent.vue';
+import { defineProps } from 'vue';
 import { useHead } from 'unhead'
 
-export default {
-    name: 'BlogView',
-    components: {
-        BlogNavigation,
-        ArticleContent
+const props = defineProps({
+    metadata: {
+        type: Object,
+        required: true
     },
-    props: {
-        markdownFilePath: {
-            type: String,
-            required: true
-        },
-        metadata: {
-            type: Object,
-            required: true
-        }
-    },
-    setup() {
-        useHead({
-            title: this.$props.metadata.title,
-            meta: this.$props.metadata.meta
-        });
+    markdownFilePath: {
+        type: String,
+        required: true
     }
-}
+});
+
+useHead({
+    title: props.metadata.title,
+    meta: props.metadata.meta
+});
 </script>
