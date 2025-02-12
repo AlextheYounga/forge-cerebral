@@ -34,11 +34,11 @@ export default {
             required: true
         }
     },
-    mounted() {
+    setup() {
         useHead({
             title: this.$props.metadata.title,
             meta: this.$props.metadata.meta
-        })
-    },
+        });
+    }
 }
 </script>

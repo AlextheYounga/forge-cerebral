@@ -42,4 +42,38 @@
 import BlogNavigation from '@/components/BlogNavigation.vue';
 import articles from '@/meta/articles.json'
 import startCase from 'lodash/startCase'
+import { ref } from 'vue'
+import { useHead } from '@vueuse/head';
+
+const post = ref({
+    title: 'Forge Cerebral',
+    description: 'Expanding consciousness through carefully crafted thought.',
+    type: 'blog',
+    image: './images/story_of_man.jpeg',
+    canonical: 'https://forgecerebral.com'
+})
+
+useHead({
+    title: post.value.title,
+    meta: [
+        { name: 'description', content: post.value.description },
+        { property: 'og:title', content: post.value.title },
+        { property: 'og:description', content: post.value.description },
+        { property: 'og:type', content: post.value.type },
+        { property: 'og:image', content: post.value.image },
+        { property: 'og:url', content: post.value.canonical },
+        { property: 'twitter:title', content: post.value.title },
+        { property: 'twitter:description', content: post.value.description },
+        { property: 'twitter:image', content: post.value.image },
+        { property: 'twitter:url', content: post.value.canonical },
+        { property: 'twitter:card', content: 'summary_large_image' },
+        { property: 'twitter:image:alt', content: post.value.title },
+        { property: 'twitter:image:src', content: post.value.image },
+        { property: 'twitter:image:width', content: '1200' },
+        { property: 'twitter:image:height', content: '630' },
+        { property: 'twitter:label1', content: 'Written by' },
+        { property: 'twitter:data1', content: 'Alex Younger' },
+        { property: 'twitter:data2', content: post.value.type },
+    ]
+});
 </script>

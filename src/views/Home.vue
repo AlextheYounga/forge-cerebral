@@ -1,11 +1,46 @@
 <script setup>
-    import NavBar from '@/components/NavBar.vue';
-    import articles from '@/meta/articles.json'
-    import { shuffle, range, take } from 'lodash'
-    import heroImg from '@/assets/images/story_of_man.jpeg'
+import { ref } from 'vue'
+import { useHead } from '@vueuse/head'
+import NavBar from '@/components/NavBar.vue';
+import articles from '@/meta/articles.json'
+import { shuffle, range, take } from 'lodash'
+import heroImg from '@/assets/images/story_of_man.jpeg'
 
-    const randomIndexes = take(shuffle(range(articles.length)), 4)
-    const randomArticles = randomIndexes.map(i => articles[i])
+const randomIndexes = take(shuffle(range(articles.length)), 4)
+const randomArticles = randomIndexes.map(i => articles[i])
+
+const post = ref({
+    title: 'Forge Cerebral',
+    description: 'Expanding consciousness through carefully crafted thought.',
+    type: 'blog',
+    image: './images/story_of_man.jpeg',
+    canonical: 'https://forgecerebral.com'
+})
+
+useHead({
+    title: post.value.title,
+    meta: [
+        { name: 'description', content: post.value.description },
+        { property: 'og:title', content: post.value.title },
+        { property: 'og:description', content: post.value.description },
+        { property: 'og:type', content: post.value.type },
+        { property: 'og:image', content: post.value.image },
+        { property: 'og:url', content: post.value.canonical },
+        { property: 'twitter:title', content: post.value.title },
+        { property: 'twitter:description', content: post.value.description },
+        { property: 'twitter:image', content: post.value.image },
+        { property: 'twitter:url', content: post.value.canonical },
+        { property: 'twitter:card', content: 'summary_large_image' },
+        { property: 'twitter:image:alt', content: post.value.title },
+        { property: 'twitter:image:src', content: post.value.image },
+        { property: 'twitter:image:width', content: '1200' },
+        { property: 'twitter:image:height', content: '630' },
+        { property: 'twitter:label1', content: 'Written by' },
+        { property: 'twitter:data1', content: 'Alex Younger' },
+        { property: 'twitter:data2', content: post.value.type },
+    ]
+});
+
 </script>
 
 <template>
@@ -14,7 +49,7 @@
         <section class="body-font w-full">
             <div class="container px-5 py-12 mx-auto">
                 <div class="flex flex-col text-center w-full mb-6">
-                    <img class="w-72 mx-auto pb-1" :src="heroImg"/>
+                    <img class="w-72 mx-auto pb-1" :src="heroImg" />
                     <!-- <h2 class="text-xs tracking-widest font-medium title-font mb-1">Alex Younger's</h2> -->
                     <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4">Forge Cerebral</h1>
                     <p class="lg:w-2/3 mx-auto leading-relaxed text-base"></p>
@@ -35,4 +70,3 @@
         </section>
     </main>
 </template>
-
