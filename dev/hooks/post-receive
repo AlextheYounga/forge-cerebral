@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Run your build commands here
+source ~/.nvm/nvm.sh
+
+# Refresh node modules
+rm -rf node_modules
+nvm install
+wait
+yarn 
+yarn build
